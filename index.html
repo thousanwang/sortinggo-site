@@ -49,6 +49,114 @@
         </ul>
       </div>
 
+      <!-- 方案定價 -->
+      <div class="card">
+        <h2>訂閱方案</h2>
+        <p>選擇適合你的方案，隨時可在 Google Play 升級或取消。</p>
+        <div class="plan-cards">
+
+          <div class="plan-card">
+            <div class="plan-name">Free</div>
+            <div class="plan-label">免費版</div>
+            <div class="plan-price">NT$0</div>
+            <div class="plan-desc">新用戶體驗<br>每月限 100 筆</div>
+          </div>
+
+          <div class="plan-card plan-card--lite">
+            <div class="plan-name">Lite</div>
+            <div class="plan-label">輕商務版</div>
+            <div class="plan-price">NT$99<span>/月</span></div>
+            <div class="plan-desc">家庭採買、團購<br>代購、小賣家</div>
+          </div>
+
+          <div class="plan-card plan-card--std">
+            <div class="plan-name">Std</div>
+            <div class="plan-label">標準版</div>
+            <div class="plan-price">NT$199<span>/月</span></div>
+            <div class="plan-desc">倉庫、工作室<br>電商出貨、公司配貨</div>
+          </div>
+
+          <div class="plan-card plan-card--coming">
+            <div class="plan-name">Pro / Ent</div>
+            <div class="plan-label">進階 / 企業版</div>
+            <div class="plan-price plan-coming-soon">即將推出</div>
+            <div class="plan-desc">標籤列印、API 串接<br>多人派工、Mini WMS</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 功能矩陣 -->
+      <div class="card">
+        <h2>功能矩陣 <span class="version-badge">v1.4.0</span></h2>
+        <p>圖例：<span class="legend legend--ok">✅ 可用</span> <span class="legend legend--no">❌ 封鎖</span> <span class="legend legend--lock">🔒 需升級方案</span></p>
+
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th class="col-feature">功能</th>
+                <th class="col-tier">Free<br><small>免費版</small></th>
+                <th class="col-tier">Lite<br><small>輕商務版</small></th>
+                <th class="col-tier col-tier--std">Std<br><small>標準版</small></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="group-header"><td colspan="4">匯入</td></tr>
+              <tr><td>進入匯入畫面</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>基本欄位（日期、客戶、品名、數量、備註）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>進階欄位（訂單號碼、客戶代碼、商品代碼、規格、單位）</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+              <tr><td>讀取動線分頁（custseq / prodseq）</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">訂單</td></tr>
+              <tr><td>訂單清單、搜尋、篩選、刪除</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>轉單（匯出選取訂單）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>新增補單（基本 5 欄）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>新增補單（進階 5 欄）</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+              <tr><td>建立 / 加入批次（每月 ≤100 筆）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>建立 / 加入批次（無上限）</td><td>❌ 月限制</td><td>✅</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">批次</td></tr>
+              <tr><td>批次清單、詳情、更名、取消</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>刪除批次</td><td>❌</td><td>✅</td><td>✅</td></tr>
+              <tr><td>恢復分揀（完成→分揀中）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>客戶 / 商品順序（手動排序）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>匯出 Excel（完成批次）</td><td>❌</td><td>✅</td><td>✅</td></tr>
+              <tr><td>前往配量</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+              <tr><td>前往備貨</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+              <tr><td>客戶模板 / 商品模板</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">配量 / 備貨</td></tr>
+              <tr><td>進入配量畫面</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+              <tr><td>進入備貨畫面</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">分揀</td></tr>
+              <tr><td>播種式分揀（Sowing）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>揀貨式分揀（Picking）</td><td>✅</td><td>✅</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">匯出</td></tr>
+              <tr><td>進入匯出畫面</td><td>❌</td><td>✅</td><td>✅</td></tr>
+              <tr><td>匯出 Excel</td><td>❌</td><td>✅</td><td>✅</td></tr>
+              <tr><td>遠端匯出（SMB / SFTP / FTP）</td><td>❌</td><td>✅</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">動線模板</td></tr>
+              <tr><td>動線模板管理 / 匯入（custseq）</td><td>🔒 STD</td><td>🔒 STD</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">聲控 / 耳機</td></tr>
+              <tr><td>聲控設定</td><td>✅ ★</td><td>✅</td><td>✅</td></tr>
+              <tr><td>耳機媒體按鍵控制</td><td>✅ ★</td><td>✅</td><td>✅</td></tr>
+
+              <tr class="group-header"><td colspan="4">設定</td></tr>
+              <tr><td>一般設定</td><td>✅</td><td>✅</td><td>✅</td></tr>
+              <tr><td>清除備份並清空資料庫</td><td>❌</td><td>✅</td><td>✅</td></tr>
+
+            </tbody>
+          </table>
+        </div>
+        <p class="matrix-note">★ v1.4.0 新開放（舊版為 Std 限定）</p>
+      </div>
+
       <div class="card">
         <h2>重要資訊</h2>
         <div class="nav-links">
