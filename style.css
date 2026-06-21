@@ -28,7 +28,7 @@ header {
   padding: 20px 0;
 }
 
-header .container {
+.header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,6 +58,42 @@ nav a {
 
 nav a:hover {
   color: #2563eb;
+}
+
+/* Language switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.lang-switch a,
+.lang-switch span {
+  font-size: 0.78rem;
+  padding: 3px 9px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.lang-switch a {
+  color: #555;
+  background: #f4f5f7;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-switch a:hover {
+  background: #e0e8ff;
+  color: #2563eb;
+}
+
+.lang-switch span.current {
+  color: #fff;
+  background: #2563eb;
+  font-weight: 600;
 }
 
 /* Hero (index only) */
@@ -441,6 +477,44 @@ footer {
   margin-top: 40px;
 }
 
+/* ── Redirect stub pages ──────────────────────── */
+
+.redirect-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.redirect-page h1 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 14px;
+}
+
+.redirect-page .fallback-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.redirect-page .fallback-links a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #f4f5f7;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.redirect-page .fallback-links a:hover {
+  background: #e0e8ff;
+}
+
 /* ── Responsive ───────────────────────────────── */
 
 @media (max-width: 600px) {
@@ -448,12 +522,14 @@ footer {
   .hero p  { font-size: 1rem; }
   .card    { padding: 24px 20px; }
 
-  header .container {
+  .header-row {
     flex-direction: column;
     align-items: flex-start;
   }
 
   nav { gap: 14px; }
+
+  .lang-switch { margin-top: 8px; padding-top: 8px; }
 
   .page-hero h1 { font-size: 1.3rem; }
 

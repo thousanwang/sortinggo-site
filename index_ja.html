@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SortingGo — スマホで仕分け・引当・出荷準備・ピッキングをすばやく完了">
+  <title>SortingGo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <a class="site-title" href="index_ja.html">SortingGo</a>
+        <nav>
+          <a href="privacy_ja.html">プライバシーポリシー</a>
+          <a href="terms_ja.html">利用規約</a>
+          <a href="copyright_ja.html">著作権表示</a>
+          <a href="support_ja.html">サポートとお問い合わせ</a>
+        </nav>
+      </div>
+      <div class="lang-switch">
+        <a href="index_tw.html">繁體中文</a>
+        <a href="index_cn.html">简体中文</a>
+        <a href="index_en.html">English</a>
+        <span class="current">日本語</span>
+        <a href="index_th.html">ภาษาไทย</a>
+        <a href="index_vi.html">Tiếng Việt</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>SortingGo</h1>
+    <p>スマホで仕分け・引当・出荷準備・ピッキングをすばやく完了</p>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- アプリ概要 -->
+      <div class="card">
+        <h2>SortingGo について</h2>
+        <p>
+          SortingGo は mobile-first・offline-first の、注文の引当・出荷準備・ピッキング・仕分け作業を支援するツールです。
+          中小企業の経営者、グループ購入の主催者、食品の卸業者、生鮮品の配送業者、ECサイトの販売者など、
+          どなたでもスマホ上で出荷前の仕分け作業をすばやく、整理された形で完了できます。
+        </p>
+
+        <h2>主な機能</h2>
+        <ul class="features">
+          <li>Excel / CSV からの注文インポートに対応、データをすぐに取り込める</li>
+          <li>Lite / Std の 2 種類のインポート形式に対応、さまざまな場面に柔軟に対応</li>
+          <li>種まき式（Putting）とピッキング式（Picking）の 2 つの仕分けモードに対応</li>
+          <li>音声読み上げに対応、両手を空けて作業を加速</li>
+          <li>ヘッドセットのメディアボタン操作に対応、画面に触れずに作業可能</li>
+          <li>動線（ルート）順序に対応、現場のレイアウトに合わせた最適なピッキング経路を設定</li>
+          <li>完全オフラインで動作、インターネット接続は不要</li>
+          <li>中小企業、グループ購入、卸売業者、生鮮品配送、ECサイトの出荷などに最適</li>
+        </ul>
+      </div>
+
+      <!-- 料金プラン -->
+      <div class="card">
+        <h2>料金プラン</h2>
+        <p>ご利用に合うプランをお選びください。Google Play からいつでもアップグレード・解約できます。</p>
+
+        <div class="plan-grid">
+
+          <div class="plan-card">
+            <div class="plan-badge">Free · 無料版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">無料</span>
+            </div>
+            <div class="plan-audience">新規ユーザー体験、小規模仕入れ<br>毎月、バッチへ追加できる上限 200 明細</div>
+            <ul class="plan-includes">
+              <li>種まき式 / ピッキング式</li>
+              <li>音声読み上げ / ヘッドセットボタン操作</li>
+              <li>カスタム注文インポート形式（基本 5 列）</li>
+              <li>手入力注文 / 再引当</li>
+              <li>顧客 / 商品の手動並び替え</li>
+              <li class="no">エクスポート Excel</li>
+              <li class="no">引当 / 出荷準備 / ピッキングルートテンプレート</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--lite">
+            <div class="plan-badge">Lite · ライト業務版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">NT$99</span>
+              <span class="plan-period">/月</span>
+            </div>
+            <div class="plan-audience">共同購入、代行購入、小規模販売者向け</div>
+            <ul class="plan-includes">
+              <li>Free のすべての機能</li>
+              <li>単位項目対応、明細数無制限</li>
+              <li>エクスポート Excel</li>
+              <li>リモートエクスポート（SMB / NAS / SFTP / FTP）</li>
+              <li>バッチの削除 / バックアップのクリア</li>
+              <li class="no">引当 / 出荷準備 / ピッキングルートテンプレート</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--std">
+            <div class="plan-badge">Std · 標準版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">NT$199</span>
+              <span class="plan-period">/月</span>
+            </div>
+            <div class="plan-audience">倉庫、作業場、EC出荷、企業の配荷向け</div>
+            <ul class="plan-includes">
+              <li>Lite のすべての機能</li>
+              <li>引当 / 出荷準備モード</li>
+              <li>ピッキングルート Excel インポート（custseq / prodseq）</li>
+              <li>顧客順序 / 商品ピッキングルートテンプレート</li>
+              <li>全項目インポート</li>
+              <li>注文番号、顧客コード、商品コード、規格などの項目</li>
+              <li class="no">ラベル設計 / 印刷</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="plan-note">
+          <strong>Pro（プロ版）</strong>（NT$399/月）と <strong>Ent（企業版）</strong>（お問い合わせ）は近日公開予定です。
+          Pro ではラベル設計・印刷、音声コントロール、API 連携を、Ent ではさらに複数ユーザー作業割当、リアルタイム同期、
+          ダッシュボード / KPI レポート、複数倉庫管理などの機能を予定しています。
+        </p>
+      </div>
+
+      <!-- 機能マトリクス -->
+      <div class="card">
+        <h2>機能マトリクス <span class="version-badge">v1.4.6</span></h2>
+        <p>凡例：<span class="legend">✅ 利用可能</span><span class="legend">❌ 利用不可</span><span class="legend">🔒 アップグレードが必要</span></p>
+
+        <div class="matrix-wrapper">
+
+          <!-- 列見出し -->
+          <div class="matrix-col-hd">
+            <div>機能</div>
+            <div>Free<br><small>無料版</small></div>
+            <div>Lite<br><small>スモールビジネス版</small></div>
+            <div class="col-std">Std<br><small>標準版</small></div>
+          </div>
+
+          <!-- 📥 インポート -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">📥 インポート</div>
+            </div>
+            <div class="matrix-row"><div>インポート画面を開く</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>基本項目（日付、顧客、品名、数量、備考）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>単位項目</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>詳細項目（注文番号、コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>動線シートの読み込み（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+          </div>
+
+          <!-- 📋 注文管理 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">📋 注文管理</div>
+            </div>
+            <div class="matrix-row"><div>注文一覧、検索、絞り込み、削除</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>転送（選択した注文のエクスポート）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（基本 5 項目）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（単位項目）</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（詳細 4 項目：注文番号、顧客コード、商品コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチの作成 / 追加（月間 200 件まで）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチの作成 / 追加（無制限）</div><div>❌ 月間上限あり</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 📦 バッチ操作 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">📦 バッチ操作</div>
+            </div>
+            <div class="matrix-row"><div>バッチ一覧、詳細、名称変更、キャンセル</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチ削除</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>顧客 / 商品の並び順（手動）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Excel エクスポート（完了したバッチ）</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>引当へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>出荷準備へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>顧客テンプレート / 商品テンプレート</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+          </div>
+
+          <!-- 🔀 仕分け / 引当 / 出荷準備 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🔀 仕分け / 引当 / 出荷準備</div>
+            </div>
+            <div class="matrix-row"><div>種まき式仕分け（Sowing）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ピッキング式仕分け（Picking）</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>引当画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>出荷準備画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+          </div>
+
+          <!-- 📤 エクスポート -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">📤 エクスポート</div>
+            </div>
+            <div class="matrix-row"><div>エクスポート画面を開く</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Excel エクスポート</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>リモートエクスポート（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🗺️ 動線テンプレート -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🗺️ 動線テンプレート</div>
+            </div>
+            <div class="matrix-row"><div>動線テンプレートの管理 / インポート（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+          </div>
+
+          <!-- 🎙️ 音声 / ヘッドセット操作 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🎙️ 音声 / ヘッドセット操作</div>
+            </div>
+            <div class="matrix-row"><div>音声操作の設定入口</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ヘッドセットのメディアボタン操作</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- ⚙️ 設定 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">⚙️ 設定</div>
+            </div>
+            <div class="matrix-row"><div>一般設定</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バックアップの削除とデータベースの初期化</div><div>❌</div><div>✅</div><div>✅</div></div>
+          </div>
+
+        </div>
+
+        <p class="matrix-note">★ v1.4.0 で新たに公開（旧バージョン v1.3.6 では Std 限定）</p>
+      </div>
+
+      <!-- 重要な情報 -->
+      <div class="card">
+        <h2>重要な情報</h2>
+        <div class="nav-links">
+          <a href="privacy_ja.html">プライバシーポリシー</a>
+          <a href="terms_ja.html">利用規約</a>
+          <a href="copyright_ja.html">著作権表示</a>
+          <a href="support_ja.html">サポートとお問い合わせ</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Thousan Wang. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
