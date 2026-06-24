@@ -24,7 +24,7 @@ linking to the same page in every other supported language.
 redirector pages: they read `navigator.language` in JavaScript and `location.replace()` to the matching
 `{page}_{lang}.html`. A bare `zh` (no region) resolves to `tw`; `zh-CN`/`zh-SG` resolve to `cn`; any unsupported
 language falls back to the `_en` version. Each redirector also has a `<noscript>` meta-refresh to the `_en`
-version (for environments without JavaScript) and a visible fallback link to every language as a last resort.
+version (for environments without JavaScript) and a visible fallback link to every language as a last resort. 
 
 ## Pages
 
