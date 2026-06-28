@@ -13,8 +13,9 @@ SortingGo is a mobile-first order sorting and picking assistant designed for sma
 
 ## Multi-language structure
 
-The site supports the same 8 languages as the app: Traditional Chinese (`tw`), Simplified Chinese (`cn`),
-English (`en`), Japanese (`ja`), Thai (`th`), Vietnamese (`vi`), Indonesian (`id`) and Korean (`ko`).
+The site supports the same 9 languages as the app: Traditional Chinese (`tw`), Simplified Chinese (`cn`),
+English (`en`), Japanese (`ja`), Thai (`th`), Vietnamese (`vi`), Indonesian (`id`), Korean (`ko`) and
+Spanish (`es`).
 
 Each of the 5 page types has one file per language, named `{page}_{lang}.html`, e.g. `index_en.html`,
 `privacy_ja.html`. Every `index_*.html` (and every other page) includes a language-switcher row in the header
@@ -23,7 +24,8 @@ linking to the same page in every other supported language.
 `index.html`, `privacy.html`, `terms.html`, `copyright.html` and `support.html` (no language suffix) are thin
 redirector pages: they read `navigator.language` in JavaScript and `location.replace()` to the matching
 `{page}_{lang}.html`. A bare `zh` (no region) resolves to `tw`; `zh-CN`/`zh-SG` resolve to `cn`; `id` and `in`
-both resolve to `id`; any unsupported language falls back to the `_en` version. Each redirector also has a
+both resolve to `id`; `es-*` resolves to `es`; any unsupported language falls back to the `_en` version. Each
+redirector also has a
 `<noscript>` meta-refresh to the `_en` version (for environments without JavaScript) and a visible fallback link
 to every language as a last resort.
 
@@ -44,6 +46,7 @@ to every language as a last resort.
 | `{page}_vi.html` | Vietnamese content (Tiếng Việt) |
 | `{page}_id.html` | Indonesian content (Bahasa Indonesia) |
 | `{page}_ko.html` | Korean content (한국어) |
+| `{page}_es.html` | Spanish content (Español) |
 | `style.css` | Shared stylesheet |
 
 ## GitHub Pages Setup
