@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SortingGo Release Notes">
+  <title>Release Notes — SortingGo</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var lang = (navigator.language || 'en').toLowerCase();
+      var target = 'en';
+      if (lang.indexOf('zh') === 0) {
+        target = (lang.indexOf('cn') !== -1 || lang.indexOf('sg') !== -1) ? 'cn' : 'tw';
+      } else if (lang.indexOf('ja') === 0) {
+        target = 'ja';
+      } else if (lang.indexOf('th') === 0) {
+        target = 'th';
+      } else if (lang.indexOf('vi') === 0) {
+        target = 'vi';
+      } else if (lang.indexOf('id') === 0 || lang.indexOf('in') === 0) {
+        target = 'id';
+      } else if (lang.indexOf('ko') === 0) {
+        target = 'ko';
+      } else if (lang.indexOf('es') === 0) {
+        target = 'es';
+      } else if (lang.indexOf('en') === 0) {
+        target = 'en';
+      }
+      location.replace('releasenotes_' + target + '.html');
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=releasenotes_en.html">
+  </noscript>
+</head>
+<body>
+  <div class="redirect-page">
+    <div>
+      <h1>Redirecting to SortingGo Release Notes…</h1>
+      <p>If you are not redirected automatically, please choose your language:</p>
+      <div class="fallback-links">
+        <a href="releasenotes_tw.html">繁體中文</a>
+        <a href="releasenotes_cn.html">简体中文</a>
+        <a href="releasenotes_en.html">English</a>
+        <a href="releasenotes_ja.html">日本語</a>
+        <a href="releasenotes_th.html">ภาษาไทย</a>
+        <a href="releasenotes_vi.html">Tiếng Việt</a>
+        <a href="releasenotes_id.html">Bahasa Indonesia</a>
+        <a href="releasenotes_ko.html">한국어</a>
+        <a href="releasenotes_es.html">Español</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
