@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.5.7 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Improved startup reliability when Google Play Store or Play services are temporarily unavailable: in-app update checks now fail silently and never block offline sorting</li>
+          <li>Improved subscription restore safety: failed Google Play Billing queries no longer overwrite a paid local plan as Free</li>
+          <li>Added a 45-day subscription verification grace period: paid users can keep working offline and will only see a dismissible reminder to reconnect and verify</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.6 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Voice order input now supports the spec field on Std / Pro plans, in addition to product name, quantity, and unit</li>
