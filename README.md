@@ -48,6 +48,7 @@ to every language as a last resort.
 | `{page}_ko.html` | Korean content (한국어) |
 | `{page}_es.html` | Spanish content (Español) |
 | `style.css` | Shared stylesheet |
+| `version.json` | Static update manifest read by the app before showing update reminders |
 
 ## GitHub Pages Setup
 
@@ -59,6 +60,14 @@ to every language as a last resort.
 ```
 https://thousanwang.github.io/sortinggo-site/
 ```
+
+## Version Check Manifest
+
+SortingGo checks `https://thousanwang.github.io/sortinggo-site/version.json` on app startup. Keep
+`latestVersionCode` equal to the currently available Google Play version. After a newer release is available on
+Google Play, increase `latestVersionCode` so older installed apps show the update reminder and open the Play Store.
+
+If this file is missing, unavailable, or invalid JSON, the app skips the update reminder and continues launching.
 
 ## Play Store Links
 

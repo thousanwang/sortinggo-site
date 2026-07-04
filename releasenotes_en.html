@@ -16,6 +16,16 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Changed version checks to read SortingGo's website version.json and guide users to Google Play when an update is available</li>
+          <li>Improved startup reliability when Google Play or the website is temporarily unreachable, so version checks no longer block sorting work</li>
+          <li>Added a short fallback message when release notes cannot be loaded: "A new version is available. Please update from Google Play."</li>
+          <li>Fixed an issue where hands-free voice sorting could stop working after switching SortingGo to the background or another app because the microphone could not start listening</li>
+          <li>Fixed cases where Android recent apps or foreground service notifications could show the default Android icon</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.8 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Pro plan voice-controlled hands-free sorting is now available for purchase, no longer marked "Coming soon"</li>
