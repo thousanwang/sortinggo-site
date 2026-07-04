@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Redesigned Continuous Voice Control for Google Play compliance: the microphone foreground service now starts only after the user enables the feature and enters an active preparation, sowing, or picking session</li>
+          <li>Added a first-time explanation and required "I have read and understand" confirmation, clearly explaining that voice commands can continue while switching apps or turning off the screen</li>
+          <li>Added a per-session prompt asking whether to enable Continuous Voice Control for the current sorting session, with "do not enable", "enable this session", and remember-choice options</li>
+          <li>Updated the persistent notification and Stop voice control action so users can stop the voice session and release the microphone directly from the notification</li>
+          <li>Improved session cleanup: leaving the work screen, completing sorting, speech recognition errors, or stopping from the notification now stops SpeechRecognizer, the foreground service, and the notification</li>
+          <li>Completed multilingual strings for the Continuous Voice Control flow</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Changed version checks to read SortingGo's website version.json and guide users to Google Play when an update is available</li>

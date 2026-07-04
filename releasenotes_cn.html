@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>依据 Google Play 合规规格重新设计「持续语音控制」流程，仅在用户启用并进入有效备货、播种或摘取作业 Session 后启动麦克风前景服务</li>
+          <li>第一次启用时新增完整说明与「我已阅读并了解」确认，清楚告知切换 App 或关闭屏幕时仍可接收语音指令</li>
+          <li>每次开始作业时新增「本次分拣是否启用持续语音控制？」确认，可选择启用本次、不启用，并支持记住选择</li>
+          <li>更新常驻通知内容与「停止语音控制」动作，让用户可从通知栏一键停止语音 Session 并释放麦克风</li>
+          <li>强化 Session 结束流程：离开作业画面、完成分拣、语音识别错误或通知停止时，会停止 SpeechRecognizer、前景服务与通知</li>
+          <li>补齐持续语音控制相关的全部多语言文案</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>版本检查改为读取 SortingGo 官网的 version.json，检测到新版本时引导至 Google Play 更新</li>

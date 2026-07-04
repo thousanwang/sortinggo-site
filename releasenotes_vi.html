@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Thiết kế lại Điều khiển giọng nói liên tục theo yêu cầu tuân thủ Google Play: dịch vụ foreground dùng micrô chỉ khởi động sau khi người dùng bật tính năng và vào một Session chuẩn bị, gieo hàng hoặc lấy hàng đang hoạt động</li>
+          <li>Thêm phần giải thích lần đầu và xác nhận bắt buộc “Tôi đã đọc và hiểu”, nêu rõ rằng lệnh giọng nói có thể tiếp tục khi chuyển ứng dụng hoặc tắt màn hình</li>
+          <li>Thêm hộp hỏi theo từng Session: có bật Điều khiển giọng nói liên tục cho phiên phân loại hiện tại hay không, kèm lựa chọn không bật, bật phiên này và ghi nhớ lựa chọn</li>
+          <li>Cập nhật thông báo thường trực và thao tác “Dừng điều khiển giọng nói”, cho phép dừng Voice Session và nhả micrô trực tiếp từ thông báo</li>
+          <li>Tăng cường dọn dẹp Session: khi rời màn hình làm việc, hoàn tất phân loại, lỗi nhận dạng giọng nói hoặc dừng từ thông báo, hệ thống sẽ dừng SpeechRecognizer, foreground service và thông báo</li>
+          <li>Bổ sung đầy đủ chuỗi đa ngôn ngữ cho quy trình Điều khiển giọng nói liên tục</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Đổi kiểm tra phiên bản sang đọc version.json từ trang web SortingGo và mở Google Play khi có bản cập nhật</li>

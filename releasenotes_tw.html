@@ -18,6 +18,17 @@
 
         <!-- ▼ 最新版本置頂，舊版本往下新增，格式照此範例複製 ▼ -->
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>依據 Google Play 合規規格重新設計「持續語音控制」流程，僅於使用者啟用且進入有效備貨、播種或摘取作業 Session 後啟動麥克風前景服務</li>
+          <li>第一次啟用時新增完整說明與「我已閱讀並了解」確認，清楚告知切換 App 或關閉螢幕時仍可接收語音指令</li>
+          <li>每次開始作業時新增「本次分揀是否啟用持續語音控制？」確認，可選擇啟用本次、不啟用，並支援記住選擇</li>
+          <li>更新常駐通知內容與「停止語音控制」動作，讓使用者可從通知列一鍵停止語音 Session 並釋放麥克風</li>
+          <li>強化 Session 結束流程：離開作業畫面、完成分揀、語音辨識錯誤或通知停止時，會停止 SpeechRecognizer、前景服務與通知</li>
+          <li>補齊持續語音控制相關的全部多語系文案</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>版本檢查改為讀取 SortingGo 官網的 version.json，偵測到新版本時引導至 Google Play 更新</li>

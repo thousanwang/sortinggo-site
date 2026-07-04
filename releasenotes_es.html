@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Rediseñamos el Control de voz continuo para cumplir con Google Play: el servicio foreground del micrófono solo se inicia después de que el usuario activa la función y entra en una Session activa de preparación, siembra o recogida</li>
+          <li>Agregamos una explicación inicial y la confirmación obligatoria “He leído y entiendo”, aclarando que los comandos de voz pueden continuar al cambiar de app o apagar la pantalla</li>
+          <li>Agregamos una pregunta por Session para activar el Control de voz continuo en la sesión de clasificación actual, con opciones de no activar, activar esta sesión y recordar la elección</li>
+          <li>Actualizamos la notificación persistente y la acción “Detener control de voz” para que el usuario pueda detener la Voice Session y liberar el micrófono directamente desde la notificación</li>
+          <li>Mejoramos la limpieza de Session: al salir de la pantalla de trabajo, completar la clasificación, producirse un error de reconocimiento de voz o detener desde la notificación, se detienen SpeechRecognizer, el foreground service y la notificación</li>
+          <li>Completamos los textos multilingües del flujo de Control de voz continuo</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>La comprobación de versión ahora lee el version.json del sitio web de SortingGo y abre Google Play cuando hay una actualización disponible</li>

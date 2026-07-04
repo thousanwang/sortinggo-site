@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Google Play 준수 사양에 맞춰 지속 음성 제어 흐름을 재설계했습니다. 사용자가 기능을 활성화하고 유효한 준비, 파종 또는 피킹 작업 Session에 들어간 뒤에만 마이크 foreground service가 시작됩니다</li>
+          <li>최초 활성화 시 상세 설명과 “읽고 이해했습니다” 확인을 추가해, 다른 앱으로 전환하거나 화면을 꺼도 음성 명령을 받을 수 있음을 명확히 안내합니다</li>
+          <li>작업 시작 시 “이번 분류 세션에서 지속 음성 제어를 활성화할까요?” 확인을 추가하고, 활성화하지 않음, 이번 세션 활성화, 선택 기억을 지원합니다</li>
+          <li>상시 알림과 “음성 제어 중지” 동작을 업데이트하여 사용자가 알림에서 바로 Voice Session을 중지하고 마이크를 해제할 수 있게 했습니다</li>
+          <li>Session 종료 처리를 강화했습니다. 작업 화면 이탈, 분류 완료, 음성 인식 오류, 알림에서 중지 시 SpeechRecognizer, foreground service, 알림을 중지합니다</li>
+          <li>지속 음성 제어 흐름에 필요한 다국어 문구를 모두 보완했습니다</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>버전 확인 방식을 SortingGo 웹사이트의 version.json을 읽는 방식으로 변경하고, 업데이트가 있으면 Google Play로 안내합니다</li>

@@ -16,6 +16,17 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Mendesain ulang Kontrol suara berkelanjutan agar sesuai dengan kepatuhan Google Play: foreground service mikrofon hanya dimulai setelah pengguna mengaktifkan fitur dan masuk ke Session persiapan, penyemaian, atau pengambilan yang aktif</li>
+          <li>Menambahkan penjelasan pertama kali dan konfirmasi wajib “Saya sudah membaca dan mengerti”, yang menjelaskan bahwa perintah suara dapat tetap diterima saat berpindah aplikasi atau mematikan layar</li>
+          <li>Menambahkan pertanyaan per Session apakah akan mengaktifkan Kontrol suara berkelanjutan untuk sesi penyortiran saat ini, dengan opsi jangan aktifkan, aktifkan sesi ini, dan ingat pilihan</li>
+          <li>Memperbarui notifikasi tetap dan aksi “Hentikan kontrol suara” agar pengguna dapat menghentikan Voice Session dan melepas mikrofon langsung dari notifikasi</li>
+          <li>Memperkuat pembersihan Session: saat keluar dari layar kerja, penyortiran selesai, terjadi error pengenalan suara, atau dihentikan dari notifikasi, sistem akan menghentikan SpeechRecognizer, foreground service, dan notifikasi</li>
+          <li>Melengkapi string multibahasa untuk alur Kontrol suara berkelanjutan</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.5.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Pemeriksaan versi kini membaca version.json dari situs SortingGo dan mengarahkan pengguna ke Google Play saat pembaruan tersedia</li>
