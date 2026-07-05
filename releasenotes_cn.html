@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.6.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>修复 v1.6.0 已是最新版时，启动 App 仍可能显示“有新版本”通知的问题</li>
+          <li>版本检查改为使用 Android 系统回报的实际安装版号进行比对，并加入检查记录，方便后续诊断 Google Play 与官网版本同步问题</li>
+          <li>修复离开备货、播种或摘取作业明细画面后，“SortingGo 耳机控制执行中”通知仍可能停留在状态栏的问题</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.6.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>依据 Google Play 合规规格重新设计「持续语音控制」流程，仅在用户启用并进入有效备货、播种或摘取作业 Session 后启动麦克风前景服务</li>
