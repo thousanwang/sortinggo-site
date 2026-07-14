@@ -82,6 +82,7 @@
               <li>自定义格式订单导入（基本 5 栏）</li>
               <li>手动登打订单 / 改派给他人</li>
               <li>手动客户 / 商品排序</li>
+              <li>标签打印（含试用标记）</li>
               <li class="no">导出 Excel</li>
               <li class="no">分配 / 备货 / 顺序模板</li>
             </ul>
@@ -100,6 +101,7 @@
               <li>导出 Excel</li>
               <li>远程导出（SMB / NAS / SFTP / FTP）</li>
               <li>删除批次 / 清除备份</li>
+              <li>标签打印（含试用标记）</li>
               <li class="no">分配 / 备货 / 顺序模板</li>
             </ul>
           </div>
@@ -118,21 +120,33 @@
               <li>客户顺序 / 商品顺序模板</li>
               <li>完整全部字段导入</li>
               <li>订单号码、客代、品号、规格...等字段</li>
-              <li class="no">标签设计 / 打印</li>
+              <li>标签打印（含试用标记）</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--pro">
+            <div class="plan-badge">Pro · 专业版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">US$11.99</span>
+              <span class="plan-period">/月</span>
+            </div>
+            <div class="plan-audience">正式商用标签・免持语音控制</div>
+            <ul class="plan-includes">
+              <li>Std所有功能</li>
+              <li>标签打印不含试用标记</li>
+              <li>自定义语音指令控制</li>
+              <li>支持语音：完成接续、上一笔、下一笔、重播、补印</li>
+              <li>支持 Windows 打印服务与蓝牙标签机</li>
+              <li>语音、耳机与标签打印整合作业</li>
             </ul>
           </div>
 
         </div>
-
-        <p class="plan-note">
-          <strong>Pro 专业版</strong>（US$11.99/月）与 <strong>Ent 企业版</strong>（咨询）即将推出。Pro 将提供标签设计打印、语音控制与 API 串接；
-          Ent 另外提供多人派工、实时同步、Dashboard / KPI 报表与多仓管理等功能。
-        </p>
       </div>
 
       <!-- 功能矩阵 -->
       <div class="card">
-        <h2>功能矩阵 <span class="version-badge">v1.4.6</span></h2>
+        <h2>功能矩阵 <span class="version-badge">v1.7.2</span></h2>
         <p>图例：<span class="legend">✅ 可用</span><span class="legend">❌ 封锁</span><span class="legend">🔒 需升级方案</span></p>
 
         <div class="matrix-wrapper">
@@ -142,7 +156,8 @@
             <div>功能</div>
             <div>Free<br><small>免费版</small></div>
             <div>Lite<br><small>轻商务版</small></div>
-            <div class="col-std">Std<br><small>标准版</small></div>
+            <div>Std<br><small>标准版</small></div>
+            <div class="col-pro">Pro<br><small>专业版</small></div>
           </div>
 
           <!-- 📥 导入作业 -->
@@ -150,11 +165,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📥 导入作业</div>
             </div>
-            <div class="matrix-row"><div>进入导入画面</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>基本栏位（日期、客户、品名、数量、备注）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>单位栏位</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>进阶栏位（订单号码、代码、规格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>读取动线分页（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>进入导入画面</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>基本栏位（日期、客户、品名、数量、备注）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>单位栏位</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>进阶栏位（订单号码、代码、规格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>读取动线分页（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📋 订单管理 -->
@@ -162,13 +177,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📋 订单管理</div>
             </div>
-            <div class="matrix-row"><div>订单清单、搜索、筛选、删除</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>转单（导出选取订单）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增补单（基本 5 栏）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增补单（单位栏位）</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增补单（进阶 4 栏：订单号码、客代、品号、规格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>创建 / 加入批次（每月 ≤ 200 笔）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>创建 / 加入批次（无上限）</div><div>❌ 月限制</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>订单清单、搜索、筛选、删除</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>转单（导出选取订单）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增补单（基本 5 栏）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增补单（单位栏位）</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增补单（进阶 4 栏：订单号码、客代、品号、规格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>语音输入订单（栏位权限比照新增补单）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>创建 / 加入批次（每月 ≤ 200 笔）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>创建 / 加入批次（无上限）</div><div>❌ 月限制</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📦 批次作业 -->
@@ -176,13 +192,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📦 批次作业</div>
             </div>
-            <div class="matrix-row"><div>批次清单、详情、改名、取消</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>删除批次</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>客户 / 商品顺序（手动排序）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>导出 Excel（完成批次）</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>前往配量</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>前往备货</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>客户模板 / 商品模板</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>批次清单、详情、改名、取消</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>删除批次</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>客户 / 商品顺序（手动排序）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>导出 Excel（完成批次）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>前往配量</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>前往备货</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>客户模板 / 商品模板</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>小计补印</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🔀 分拣 / 配量 / 备货 -->
@@ -190,10 +207,10 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🔀 分拣 / 配量 / 备货</div>
             </div>
-            <div class="matrix-row"><div>播种式分拣（Putting）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>拣货式分拣（Picking）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>配量画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>备货画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>播种式分拣（Putting）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>拣货式分拣（Picking）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>配量画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>备货画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📤 导出功能 -->
@@ -201,9 +218,9 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📤 导出功能</div>
             </div>
-            <div class="matrix-row"><div>进入导出画面</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>导出 Excel</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>远程导出（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>进入导出画面</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>导出 Excel</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>远程导出（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🗺️ 动线模板 -->
@@ -211,7 +228,16 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🗺️ 动线模板</div>
             </div>
-            <div class="matrix-row"><div>动线模板管理 / 导入（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>动线模板管理 / 导入（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🏷️ 标签打印 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🏷️ 标签打印</div>
+            </div>
+            <div class="matrix-row"><div>标签设计 / 打印</div><div>✅ ‡</div><div>✅ ‡</div><div>✅ ‡</div><div>✅</div></div>
+            <div class="matrix-row"><div>正式商用打印（无试用标记）／ Windows 打印服务与蓝牙标签机</div><div>❌</div><div>❌</div><div>❌</div><div>✅</div></div>
           </div>
 
           <!-- 🎙️ 声控 / 耳机控制 -->
@@ -219,8 +245,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🎙️ 声控 / 耳机控制</div>
             </div>
-            <div class="matrix-row"><div>声控设置入口</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>耳机媒体按键控制</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>声控设置入口</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>耳机媒体按键控制</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>耳机按键设置精灵</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>免持语音控制（背景聆听 / 自定义语音指令）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
+            <div class="matrix-row"><div>进阶语音操作（完成接续、上一笔、下一笔、重播、补印）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
           </div>
 
           <!-- ⚙️ 设置 -->
@@ -228,13 +257,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">⚙️ 设置</div>
             </div>
-            <div class="matrix-row"><div>一般设置</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>清除备份并清空数据库</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>一般设置</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>清除备份并清空数据库</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>AI 智能客服助理</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
         </div>
 
-        <p class="matrix-note">★ v1.4.0 新开放（旧版 v1.3.6 为 Std 限定）</p>
+        <p class="matrix-note">★ v1.4.0 新开放（旧版 v1.3.6 为 Std 限定）　‡ 含试用标记，正式商用打印需升级至 Pro</p>
       </div>
 
       <!-- 重要信息 -->

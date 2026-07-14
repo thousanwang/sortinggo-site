@@ -84,6 +84,7 @@
               <li>Custom order import format (basic 5 columns)</li>
               <li>Manual order entry / reassignment</li>
               <li>Manual customer / item sorting</li>
+              <li>Label printing with trial mark</li>
               <li class="no">Export Excel</li>
               <li class="no">Allocation / staging / route templates</li>
             </ul>
@@ -102,6 +103,7 @@
               <li>Export Excel</li>
               <li>Remote export (SMB / NAS / SFTP / FTP)</li>
               <li>Delete batches / clear backup</li>
+              <li>Label printing with trial mark</li>
               <li class="no">Allocation / staging / route templates</li>
             </ul>
           </div>
@@ -120,22 +122,33 @@
               <li>Customer routing / product order templates</li>
               <li>Full-field import</li>
               <li>Order no., customer code, product code, spec, and more</li>
-              <li class="no">Label design / printing</li>
+              <li>Label printing with trial mark</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--pro">
+            <div class="plan-badge">Pro</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">$11.99</span>
+              <span class="plan-period">/mo</span>
+            </div>
+            <div class="plan-audience">Official commercial-use labels &middot; hands-free voice control</div>
+            <ul class="plan-includes">
+              <li>All Std features</li>
+              <li>Label printing without trial watermark</li>
+              <li>Custom voice command control</li>
+              <li>Voice support: complete &amp; continue, previous item, next item, replay, reprint</li>
+              <li>Supports Windows print service and Bluetooth label printers</li>
+              <li>Integrated voice, headset, and label printing workflow</li>
             </ul>
           </div>
 
         </div>
-
-        <p class="plan-note">
-          <strong>Pro</strong> ($11.99/mo) and <strong>Enterprise</strong> (inquire) are coming soon. Pro will add label
-          design &amp; printing, voice control, and API integration; Enterprise will additionally include multi-user
-          dispatch, real-time sync, dashboard / KPI reports, and multi-warehouse management.
-        </p>
       </div>
 
       <!-- Feature Matrix -->
       <div class="card">
-        <h2>Feature Matrix <span class="version-badge">v1.4.6</span></h2>
+        <h2>Feature Matrix <span class="version-badge">v1.7.2</span></h2>
         <p>Legend: <span class="legend">✅ Available</span><span class="legend">❌ Blocked</span><span class="legend">🔒 Requires upgrade</span></p>
 
         <div class="matrix-wrapper">
@@ -145,7 +158,8 @@
             <div>Feature</div>
             <div>Free</div>
             <div>Lite</div>
-            <div class="col-std">Std</div>
+            <div>Std</div>
+            <div class="col-pro">Pro</div>
           </div>
 
           <!-- 📥 Import -->
@@ -153,11 +167,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📥 Import</div>
             </div>
-            <div class="matrix-row"><div>Open Import screen</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Basic fields (date, customer, item, qty, notes)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Unit field</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Advanced fields (order no., code, spec)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>Read routing sheet (custseq / prodseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>Open Import screen</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Basic fields (date, customer, item, qty, notes)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Unit field</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Advanced fields (order no., code, spec)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Read routing sheet (custseq / prodseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📋 Order Management -->
@@ -165,13 +179,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📋 Order Management</div>
             </div>
-            <div class="matrix-row"><div>Order list, search, filter, delete</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Forward orders (export selected orders)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Add order manually (basic 5 fields)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Add order manually (unit field)</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Add order manually (4 advanced fields: order no., customer code, product code, spec)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>Create / add to batch (≤200 lines / month)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Create / add to batch (unlimited)</div><div>❌ Monthly cap</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Order list, search, filter, delete</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Forward orders (export selected orders)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Add order manually (basic 5 fields)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Add order manually (unit field)</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Add order manually (4 advanced fields: order no., customer code, product code, spec)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Voice order entry (same field tiers as manual add)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Create / add to batch (≤200 lines / month)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Create / add to batch (unlimited)</div><div>❌ Monthly cap</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📦 Batch Operations -->
@@ -179,13 +194,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📦 Batch Operations</div>
             </div>
-            <div class="matrix-row"><div>Batch list, details, rename, cancel</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Delete batch</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Customer / product order (manual sorting)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Export to Excel (completed batch)</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Go to Allocation</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>Go to Preparation</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>Customer templates / product templates</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>Batch list, details, rename, cancel</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Delete batch</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Customer / product order (manual sorting)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Export to Excel (completed batch)</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Go to Allocation</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Go to Preparation</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Customer templates / product templates</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Reprint subtotal</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🔀 Sorting / Allocation / Preparation -->
@@ -193,10 +209,10 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🔀 Sorting / Allocation / Preparation</div>
             </div>
-            <div class="matrix-row"><div>Putting mode</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Picking mode</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Allocation screen</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>Preparation screen</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>Putting mode</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Picking mode</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Allocation screen</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Preparation screen</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📤 Export -->
@@ -204,9 +220,9 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📤 Export</div>
             </div>
-            <div class="matrix-row"><div>Open Export screen</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Export to Excel</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Remote export (SMB / NAS / SFTP / FTP)</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Open Export screen</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Export to Excel</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Remote export (SMB / NAS / SFTP / FTP)</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🗺️ Routing Templates -->
@@ -214,7 +230,16 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🗺️ Routing Templates</div>
             </div>
-            <div class="matrix-row"><div>Routing template management / import (custseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>Routing template management / import (custseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🏷️ Label Printing -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🏷️ Label Printing</div>
+            </div>
+            <div class="matrix-row"><div>Label design / printing</div><div>✅ ‡</div><div>✅ ‡</div><div>✅ ‡</div><div>✅</div></div>
+            <div class="matrix-row"><div>Commercial printing (no trial mark) / Windows print service &amp; Bluetooth label printers</div><div>❌</div><div>❌</div><div>❌</div><div>✅</div></div>
           </div>
 
           <!-- 🎙️ Voice / Headset Control -->
@@ -222,8 +247,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🎙️ Voice / Headset Control</div>
             </div>
-            <div class="matrix-row"><div>Voice control settings entry</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Headset media-button control</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Voice control settings entry</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Headset media-button control</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Headset button setup wizard</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Hands-free voice control (background listening / custom voice commands)</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
+            <div class="matrix-row"><div>Advanced voice commands (complete &amp; continue, previous, next, replay, reprint)</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
           </div>
 
           <!-- ⚙️ Settings -->
@@ -231,13 +259,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">⚙️ Settings</div>
             </div>
-            <div class="matrix-row"><div>General settings</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Clear backups &amp; reset database</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>General settings</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Clear backups &amp; reset database</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>AI Assistant help center</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
         </div>
 
-        <p class="matrix-note">★ Newly opened up in v1.4.0 (Std-only in v1.3.6)</p>
+        <p class="matrix-note">★ Newly opened up in v1.4.0 (Std-only in v1.3.6)　‡ Includes trial watermark; upgrade to Pro for commercial printing</p>
       </div>
 
       <!-- Important Information -->

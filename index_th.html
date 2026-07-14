@@ -84,6 +84,7 @@
               <li>รูปแบบนำเข้าคำสั่งซื้อที่กำหนดเอง (พื้นฐาน 5 คอลัมน์)</li>
               <li>เพิ่มคำสั่งซื้อด้วยตนเอง / โอนงานใหม่</li>
               <li>จัดเรียงลูกค้า / รายการด้วยตนเอง</li>
+              <li>พิมพ์ป้ายพร้อมเครื่องหมายทดลองใช้</li>
               <li class="no">ส่งออก Excel</li>
               <li class="no">การจัดสรรสินค้า / การเตรียมสินค้า / เทมเพลตเส้นทาง</li>
             </ul>
@@ -102,6 +103,7 @@
               <li>ส่งออก Excel</li>
               <li>ส่งออกระยะไกล (SMB / NAS / SFTP / FTP)</li>
               <li>ลบชุดงาน / ล้างข้อมูลสำรอง</li>
+              <li>พิมพ์ป้ายพร้อมเครื่องหมายทดลองใช้</li>
               <li class="no">การจัดสรรสินค้า / การเตรียมสินค้า / เทมเพลตเส้นทาง</li>
             </ul>
           </div>
@@ -120,22 +122,33 @@
               <li>เทมเพลตเส้นทางลูกค้า / ลำดับสินค้า</li>
               <li>นำเข้าครบทุกฟิลด์</li>
               <li>เลขที่คำสั่งซื้อ รหัสลูกค้า รหัสสินค้า สเปก และอื่นๆ</li>
-              <li class="no">ออกแบบ / พิมพ์ป้ายสินค้า</li>
+              <li>พิมพ์ป้ายพร้อมเครื่องหมายทดลองใช้</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--pro">
+            <div class="plan-badge">โปร</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">฿439</span>
+              <span class="plan-period">/เดือน</span>
+            </div>
+            <div class="plan-audience">ฉลากใช้งานเชิงพาณิชย์อย่างเป็นทางการ &middot; ควบคุมด้วยเสียงแบบแฮนด์ฟรี</div>
+            <ul class="plan-includes">
+              <li>ฟีเจอร์ Std ทั้งหมด</li>
+              <li>พิมพ์ฉลากโดยไม่มีเครื่องหมายทดลองใช้</li>
+              <li>ควบคุมด้วยคำสั่งเสียงแบบกำหนดเอง</li>
+              <li>รองรับเสียง: เสร็จแล้วไปต่อ, รายการก่อนหน้า, รายการถัดไป, เล่นซ้ำ, พิมพ์ซ้ำ</li>
+              <li>รองรับบริการพิมพ์ของ Windows และเครื่องพิมพ์ฉลากบลูทูธ</li>
+              <li>การทำงานแบบผสานเสียง หูฟัง และการพิมพ์ฉลาก</li>
             </ul>
           </div>
 
         </div>
-
-        <p class="plan-note">
-          <strong>Pro (โปร)</strong> (฿439/เดือน) และ <strong>Ent (เอนเตอร์ไพรส์)</strong> (สอบถาม) จะเปิดให้ใช้งานเร็ว ๆ นี้
-          Pro จะเพิ่มการออกแบบและพิมพ์ป้ายสินค้า การควบคุมด้วยเสียง และการเชื่อมต่อ API ส่วน Ent จะเพิ่มการมอบหมายงานหลายผู้ใช้
-          การซิงค์แบบเรียลไทม์ แดชบอร์ด / รายงาน KPI และการจัดการหลายคลังสินค้า
-        </p>
       </div>
 
       <!-- ตารางฟีเจอร์ -->
       <div class="card">
-        <h2>ตารางฟีเจอร์ <span class="version-badge">v1.4.6</span></h2>
+        <h2>ตารางฟีเจอร์ <span class="version-badge">v1.7.2</span></h2>
         <p>คำอธิบาย：<span class="legend">✅ ใช้งานได้</span><span class="legend">❌ ถูกบล็อก</span><span class="legend">🔒 ต้องอัปเกรดแผน</span></p>
 
         <div class="matrix-wrapper">
@@ -145,7 +158,8 @@
             <div>ฟีเจอร์</div>
             <div>Free<br><small>แผนฟรี</small></div>
             <div>Lite<br><small>ธุรกิจขนาดเล็ก</small></div>
-            <div class="col-std">Std<br><small>มาตรฐาน</small></div>
+            <div>Std<br><small>มาตรฐาน</small></div>
+            <div class="col-pro">Pro<br><small>โปร</small></div>
           </div>
 
           <!-- 📥 การนำเข้า -->
@@ -153,11 +167,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📥 การนำเข้า</div>
             </div>
-            <div class="matrix-row"><div>เปิดหน้านำเข้า</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ฟิลด์พื้นฐาน (วันที่ ลูกค้า ชื่อสินค้า จำนวน หมายเหตุ)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ฟิลด์หน่วยนับ</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ฟิลด์ขั้นสูง (เลขที่คำสั่งซื้อ รหัส สเปก)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>อ่านชีตเส้นทาง (custseq / prodseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>เปิดหน้านำเข้า</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ฟิลด์พื้นฐาน (วันที่ ลูกค้า ชื่อสินค้า จำนวน หมายเหตุ)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ฟิลด์หน่วยนับ</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ฟิลด์ขั้นสูง (เลขที่คำสั่งซื้อ รหัส สเปก)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>อ่านชีตเส้นทาง (custseq / prodseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📋 การจัดการคำสั่งซื้อ -->
@@ -165,13 +179,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📋 การจัดการคำสั่งซื้อ</div>
             </div>
-            <div class="matrix-row"><div>รายการคำสั่งซื้อ ค้นหา กรอง ลบ</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>โอนคำสั่งซื้อ (ส่งออกคำสั่งซื้อที่เลือก)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (5 ฟิลด์พื้นฐาน)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (ฟิลด์หน่วยนับ)</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (4 ฟิลด์ขั้นสูง: เลขที่คำสั่งซื้อ รหัสลูกค้า รหัสสินค้า สเปก)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>สร้าง / เพิ่มเข้าชุดงาน (ไม่เกิน 200 รายการ/เดือน)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>สร้าง / เพิ่มเข้าชุดงาน (ไม่จำกัด)</div><div>❌ จำกัดต่อเดือน</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>รายการคำสั่งซื้อ ค้นหา กรอง ลบ</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>โอนคำสั่งซื้อ (ส่งออกคำสั่งซื้อที่เลือก)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (5 ฟิลด์พื้นฐาน)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (ฟิลด์หน่วยนับ)</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>เพิ่มคำสั่งซื้อด้วยมือ (4 ฟิลด์ขั้นสูง: เลขที่คำสั่งซื้อ รหัสลูกค้า รหัสสินค้า สเปก)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ป้อนคำสั่งซื้อด้วยเสียง (สิทธิ์ฟิลด์เหมือนการเพิ่มด้วยมือ)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>สร้าง / เพิ่มเข้าชุดงาน (ไม่เกิน 200 รายการ/เดือน)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>สร้าง / เพิ่มเข้าชุดงาน (ไม่จำกัด)</div><div>❌ จำกัดต่อเดือน</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📦 การทำงานกับชุดงาน -->
@@ -179,13 +194,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📦 การทำงานกับชุดงาน</div>
             </div>
-            <div class="matrix-row"><div>รายการชุดงาน รายละเอียด เปลี่ยนชื่อ ยกเลิก</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ลบชุดงาน</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>จัดลำดับลูกค้า / สินค้า (ด้วยมือ)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ส่งออก Excel (ชุดงานที่เสร็จสิ้น)</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ไปยังการจัดสรรสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>ไปยังการเตรียมสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>เทมเพลตลูกค้า / เทมเพลตสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>รายการชุดงาน รายละเอียด เปลี่ยนชื่อ ยกเลิก</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ลบชุดงาน</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>จัดลำดับลูกค้า / สินค้า (ด้วยมือ)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ส่งออก Excel (ชุดงานที่เสร็จสิ้น)</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ไปยังการจัดสรรสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ไปยังการเตรียมสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>เทมเพลตลูกค้า / เทมเพลตสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>พิมพ์ยอดรวมย่อยซ้ำ</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🔀 คัดแยก / จัดสรรสินค้า / เตรียมสินค้า -->
@@ -193,10 +209,10 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🔀 คัดแยก / จัดสรรสินค้า / เตรียมสินค้า</div>
             </div>
-            <div class="matrix-row"><div>คัดแยกแบบวางสินค้า (Putting)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>คัดแยกแบบหยิบสินค้า (Picking)</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>หน้าจัดสรรสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>หน้าเตรียมสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>คัดแยกแบบวางสินค้า (Putting)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>คัดแยกแบบหยิบสินค้า (Picking)</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>หน้าจัดสรรสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>หน้าเตรียมสินค้า</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📤 การส่งออก -->
@@ -204,9 +220,9 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📤 การส่งออก</div>
             </div>
-            <div class="matrix-row"><div>เปิดหน้าส่งออก</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ส่งออกเป็น Excel</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ส่งออกระยะไกล (SMB / NAS / SFTP / FTP)</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>เปิดหน้าส่งออก</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ส่งออกเป็น Excel</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ส่งออกระยะไกล (SMB / NAS / SFTP / FTP)</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🗺️ เทมเพลตเส้นทาง -->
@@ -214,7 +230,16 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🗺️ เทมเพลตเส้นทาง</div>
             </div>
-            <div class="matrix-row"><div>จัดการ / นำเข้าเทมเพลตเส้นทาง (custseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>จัดการ / นำเข้าเทมเพลตเส้นทาง (custseq)</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🏷️ พิมพ์ฉลาก -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🏷️ พิมพ์ฉลาก</div>
+            </div>
+            <div class="matrix-row"><div>ออกแบบ / พิมพ์ฉลาก</div><div>✅ ‡</div><div>✅ ‡</div><div>✅ ‡</div><div>✅</div></div>
+            <div class="matrix-row"><div>พิมพ์เชิงพาณิชย์ (ไม่มีเครื่องหมายทดลองใช้) / บริการพิมพ์ Windows และเครื่องพิมพ์ฉลากบลูทูธ</div><div>❌</div><div>❌</div><div>❌</div><div>✅</div></div>
           </div>
 
           <!-- 🎙️ การควบคุมด้วยเสียง / หูฟัง -->
@@ -222,8 +247,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🎙️ การควบคุมด้วยเสียง / หูฟัง</div>
             </div>
-            <div class="matrix-row"><div>ทางเข้าตั้งค่าการควบคุมด้วยเสียง</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ควบคุมด้วยปุ่มสื่อบนหูฟัง</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ทางเข้าตั้งค่าการควบคุมด้วยเสียง</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ควบคุมด้วยปุ่มสื่อบนหูฟัง</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ตัวช่วยตั้งค่าปุ่มหูฟัง</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ควบคุมเสียงแบบแฮนด์ฟรี (ฟังพื้นหลัง / คำสั่งเสียงกำหนดเอง)</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
+            <div class="matrix-row"><div>คำสั่งเสียงขั้นสูง (เสร็จแล้วไปต่อ, รายการก่อนหน้า, รายการถัดไป, เล่นซ้ำ, พิมพ์ซ้ำ)</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
           </div>
 
           <!-- ⚙️ การตั้งค่า -->
@@ -231,13 +259,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">⚙️ การตั้งค่า</div>
             </div>
-            <div class="matrix-row"><div>การตั้งค่าทั่วไป</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ล้างข้อมูลสำรองและรีเซ็ตฐานข้อมูล</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>การตั้งค่าทั่วไป</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ล้างข้อมูลสำรองและรีเซ็ตฐานข้อมูล</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ผู้ช่วย AI ในศูนย์ช่วยเหลือ</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
         </div>
 
-        <p class="matrix-note">★ เปิดให้ใช้งานใหม่ใน v1.4.0 (เวอร์ชัน v1.3.6 จำกัดเฉพาะ Std)</p>
+        <p class="matrix-note">★ เปิดให้ใช้งานใหม่ใน v1.4.0 (เวอร์ชัน v1.3.6 จำกัดเฉพาะ Std)　‡ มีลายน้ำทดลองใช้ อัปเกรดเป็น Pro เพื่อพิมพ์เชิงพาณิชย์</p>
       </div>
 
       <!-- ข้อมูลสำคัญ -->

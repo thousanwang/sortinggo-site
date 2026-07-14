@@ -82,6 +82,7 @@
               <li>自訂格式訂單匯入（基本 5 欄）</li>
               <li>手動登打訂單 / 改派給他人</li>
               <li>手動客戶 / 商品排序</li>
+              <li>標籤列印（含試用標記）</li>
               <li class="no">匯出 Excel</li>
               <li class="no">配量 / 備貨 / 動線模板</li>
             </ul>
@@ -100,6 +101,7 @@
               <li>匯出 Excel</li>
               <li>遠端匯出（SMB / NAS / SFTP / FTP）</li>
               <li>刪除批次 / 清除備份</li>
+              <li>標籤列印（含試用標記）</li>
               <li class="no">配量 / 備貨 / 動線模板</li>
             </ul>
           </div>
@@ -118,21 +120,33 @@
               <li>客戶動線 / 商品順序模板</li>
               <li>完整全部欄位匯入</li>
               <li>訂單號碼、客代、品號、規格...等欄位</li>
-              <li class="no">標籤設計 / 列印</li>
+              <li>標籤列印（含試用標記）</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--pro">
+            <div class="plan-badge">Pro · 專業版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">NT$399</span>
+              <span class="plan-period">/月</span>
+            </div>
+            <div class="plan-audience">正式商用標籤・免持語音控制</div>
+            <ul class="plan-includes">
+              <li>Std所有功能</li>
+              <li>標籤列印不含試用標記</li>
+              <li>自訂語音指令控制</li>
+              <li>支援語音：完成接續、上一筆、下一筆、重播、補印</li>
+              <li>支援 Windows 列印服務與藍牙標籤機</li>
+              <li>語音、耳機與標籤列印整合作業</li>
             </ul>
           </div>
 
         </div>
-
-        <p class="plan-note">
-          <strong>Pro 專業版</strong>（NT$399/月）與 <strong>Ent 企業版</strong>（洽詢）即將推出。Pro 將提供標籤設計列印、語音控制與 API 串接；
-          Ent 另外提供多人派工、即時同步、Dashboard / KPI 報表與多倉管理等功能。
-        </p>
       </div>
 
       <!-- 功能矩陣 -->
       <div class="card">
-        <h2>功能矩陣 <span class="version-badge">v1.4.6</span></h2>
+        <h2>功能矩陣 <span class="version-badge">v1.7.2</span></h2>
         <p>圖例：<span class="legend">✅ 可用</span><span class="legend">❌ 封鎖</span><span class="legend">🔒 需升級方案</span></p>
 
         <div class="matrix-wrapper">
@@ -142,7 +156,8 @@
             <div>功能</div>
             <div>Free<br><small>免費版</small></div>
             <div>Lite<br><small>輕商務版</small></div>
-            <div class="col-std">Std<br><small>標準版</small></div>
+            <div>Std<br><small>標準版</small></div>
+            <div class="col-pro">Pro<br><small>專業版</small></div>
           </div>
 
           <!-- 📥 匯入作業 -->
@@ -150,11 +165,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📥 匯入作業</div>
             </div>
-            <div class="matrix-row"><div>進入匯入畫面</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>基本欄位（日期、客戶、品名、數量、備註）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>單位欄位</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>進階欄位（訂單號碼、代碼、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>讀取動線分頁（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>進入匯入畫面</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>基本欄位（日期、客戶、品名、數量、備註）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>單位欄位</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>進階欄位（訂單號碼、代碼、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>讀取動線分頁（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📋 訂單管理 -->
@@ -162,13 +177,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📋 訂單管理</div>
             </div>
-            <div class="matrix-row"><div>訂單清單、搜尋、篩選、刪除</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>轉單（匯出選取訂單）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增補單（基本 5 欄）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增補單（單位欄位）</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>新增補單（進階 4 欄：訂單號碼、客代、品號、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>建立 / 加入批次（每月 ≤ 200 筆）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>建立 / 加入批次（無上限）</div><div>❌ 月限制</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>訂單清單、搜尋、篩選、刪除</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>轉單（匯出選取訂單）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增補單（基本 5 欄）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增補單（單位欄位）</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>新增補單（進階 4 欄：訂單號碼、客代、品號、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>語音輸入訂單（欄位權限比照新增補單）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>建立 / 加入批次（每月 ≤ 200 筆）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>建立 / 加入批次（無上限）</div><div>❌ 月限制</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📦 批次作業 -->
@@ -176,13 +192,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📦 批次作業</div>
             </div>
-            <div class="matrix-row"><div>批次清單、詳情、更名、取消</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>刪除批次</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>客戶 / 商品順序（手動排序）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>匯出 Excel（完成批次）</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>前往配量</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>前往備貨</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>客戶模板 / 商品模板</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>批次清單、詳情、更名、取消</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>刪除批次</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>客戶 / 商品順序（手動排序）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>匯出 Excel（完成批次）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>前往配量</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>前往備貨</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>客戶模板 / 商品模板</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>小計補印</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🔀 分揀 / 配量 / 備貨 -->
@@ -190,10 +207,10 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🔀 分揀 / 配量 / 備貨</div>
             </div>
-            <div class="matrix-row"><div>播種式分揀（Putting）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>揀貨式分揀（Picking）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>配量畫面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>備貨畫面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>播種式分揀（Putting）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>揀貨式分揀（Picking）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>配量畫面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>備貨畫面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📤 匯出功能 -->
@@ -201,9 +218,9 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📤 匯出功能</div>
             </div>
-            <div class="matrix-row"><div>進入匯出畫面</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>匯出 Excel</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>遠端匯出（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>進入匯出畫面</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>匯出 Excel</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>遠端匯出（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🗺️ 動線模板 -->
@@ -211,7 +228,16 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🗺️ 動線模板</div>
             </div>
-            <div class="matrix-row"><div>動線模板管理 / 匯入（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>動線模板管理 / 匯入（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🏷️ 標籤列印 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🏷️ 標籤列印</div>
+            </div>
+            <div class="matrix-row"><div>標籤設計 / 列印</div><div>✅ ‡</div><div>✅ ‡</div><div>✅ ‡</div><div>✅</div></div>
+            <div class="matrix-row"><div>正式商用列印（無試用標記）／ Windows 列印服務與藍牙標籤機</div><div>❌</div><div>❌</div><div>❌</div><div>✅</div></div>
           </div>
 
           <!-- 🎙️ 聲控 / 耳機 -->
@@ -219,8 +245,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🎙️ 聲控 / 耳機控制</div>
             </div>
-            <div class="matrix-row"><div>聲控設定入口</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>耳機媒體按鍵控制</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>聲控設定入口</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>耳機媒體按鍵控制</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>耳機按鍵設定精靈</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>免持語音控制（背景聆聽 / 自訂語音指令）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
+            <div class="matrix-row"><div>進階語音操作（完成接續、上一筆、下一筆、重播、補印）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
           </div>
 
           <!-- ⚙️ 設定 -->
@@ -228,13 +257,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">⚙️ 設定</div>
             </div>
-            <div class="matrix-row"><div>一般設定</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>清除備份並清空資料庫</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>一般設定</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>清除備份並清空資料庫</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>AI 智慧客服助理</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
         </div>
 
-        <p class="matrix-note">★ v1.4.0 新開放（舊版 v1.3.6 為 Std 限定）</p>
+        <p class="matrix-note">★ v1.4.0 新開放（舊版 v1.3.6 為 Std 限定）　‡ 含試用標記，正式商用列印需升級至 Pro</p>
       </div>
 
       <!-- 重要資訊 -->

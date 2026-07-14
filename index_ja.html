@@ -83,6 +83,7 @@
               <li>カスタム注文インポート形式（基本 5 列）</li>
               <li>手入力注文 / 再引当</li>
               <li>顧客 / 商品の手動並び替え</li>
+              <li>試用マーク付きラベル印刷</li>
               <li class="no">エクスポート Excel</li>
               <li class="no">引当 / 出荷準備 / ピッキングルートテンプレート</li>
             </ul>
@@ -101,6 +102,7 @@
               <li>エクスポート Excel</li>
               <li>リモートエクスポート（SMB / NAS / SFTP / FTP）</li>
               <li>バッチの削除 / バックアップのクリア</li>
+              <li>試用マーク付きラベル印刷</li>
               <li class="no">引当 / 出荷準備 / ピッキングルートテンプレート</li>
             </ul>
           </div>
@@ -119,22 +121,33 @@
               <li>顧客順序 / 商品ピッキングルートテンプレート</li>
               <li>全項目インポート</li>
               <li>注文番号、顧客コード、商品コード、規格などの項目</li>
-              <li class="no">ラベル設計 / 印刷</li>
+              <li>試用マーク付きラベル印刷</li>
+            </ul>
+          </div>
+
+          <div class="plan-card plan-card--pro">
+            <div class="plan-badge">Pro · プロ版</div>
+            <div class="plan-price-row">
+              <span class="plan-amount">¥1,800</span>
+              <span class="plan-period">/月</span>
+            </div>
+            <div class="plan-audience">正式商用ラベル・ハンズフリー音声操作</div>
+            <ul class="plan-includes">
+              <li>Std のすべての機能</li>
+              <li>試用マークなしのラベル印刷</li>
+              <li>カスタム音声コマンド操作</li>
+              <li>音声対応：完了して次へ、前の項目、次の項目、リプレイ、再印刷</li>
+              <li>Windows 印刷サービスと Bluetooth ラベルプリンターに対応</li>
+              <li>音声・ヘッドセット・ラベル印刷を統合した作業</li>
             </ul>
           </div>
 
         </div>
-
-        <p class="plan-note">
-          <strong>Pro（プロ版）</strong>（¥1,800/月）と <strong>Ent（企業版）</strong>（お問い合わせ）は近日公開予定です。
-          Pro ではラベル設計・印刷、音声コントロール、API 連携を、Ent ではさらに複数ユーザー作業割当、リアルタイム同期、
-          ダッシュボード / KPI レポート、複数倉庫管理などの機能を予定しています。
-        </p>
       </div>
 
       <!-- 機能マトリクス -->
       <div class="card">
-        <h2>機能マトリクス <span class="version-badge">v1.4.6</span></h2>
+        <h2>機能マトリクス <span class="version-badge">v1.7.2</span></h2>
         <p>凡例：<span class="legend">✅ 利用可能</span><span class="legend">❌ 利用不可</span><span class="legend">🔒 アップグレードが必要</span></p>
 
         <div class="matrix-wrapper">
@@ -144,7 +157,8 @@
             <div>機能</div>
             <div>Free<br><small>無料版</small></div>
             <div>Lite<br><small>スモールビジネス版</small></div>
-            <div class="col-std">Std<br><small>標準版</small></div>
+            <div>Std<br><small>標準版</small></div>
+            <div class="col-pro">Pro<br><small>プロ版</small></div>
           </div>
 
           <!-- 📥 インポート -->
@@ -152,11 +166,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📥 インポート</div>
             </div>
-            <div class="matrix-row"><div>インポート画面を開く</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>基本項目（日付、顧客、品名、数量、備考）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>単位項目</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>詳細項目（注文番号、コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>動線シートの読み込み（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>インポート画面を開く</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>基本項目（日付、顧客、品名、数量、備考）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>単位項目</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>詳細項目（注文番号、コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>動線シートの読み込み（custseq / prodseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📋 注文管理 -->
@@ -164,13 +178,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📋 注文管理</div>
             </div>
-            <div class="matrix-row"><div>注文一覧、検索、絞り込み、削除</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>転送（選択した注文のエクスポート）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>注文を手動追加（基本 5 項目）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>注文を手動追加（単位項目）</div><div>🔒 LITE</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>注文を手動追加（詳細 4 項目：注文番号、顧客コード、商品コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>バッチの作成 / 追加（月間 200 件まで）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>バッチの作成 / 追加（無制限）</div><div>❌ 月間上限あり</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文一覧、検索、絞り込み、削除</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>転送（選択した注文のエクスポート）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（基本 5 項目）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（単位項目）</div><div>🔒 LITE</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>注文を手動追加（詳細 4 項目：注文番号、顧客コード、商品コード、規格）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>音声入力注文（項目権限は手動追加と同じ）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチの作成 / 追加（月間 200 件まで）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチの作成 / 追加（無制限）</div><div>❌ 月間上限あり</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📦 バッチ操作 -->
@@ -178,13 +193,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📦 バッチ操作</div>
             </div>
-            <div class="matrix-row"><div>バッチ一覧、詳細、名称変更、キャンセル</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>バッチ削除</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>顧客 / 商品の並び順（手動）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Excel エクスポート（完了したバッチ）</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>引当へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>出荷準備へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>顧客テンプレート / 商品テンプレート</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチ一覧、詳細、名称変更、キャンセル</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バッチ削除</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>顧客 / 商品の並び順（手動）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Excel エクスポート（完了したバッチ）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>引当へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>出荷準備へ移動</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>顧客テンプレート / 商品テンプレート</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>小計の再印刷</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🔀 仕分け / 引当 / 出荷準備 -->
@@ -192,10 +208,10 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🔀 仕分け / 引当 / 出荷準備</div>
             </div>
-            <div class="matrix-row"><div>種まき式仕分け（Putting）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ピッキング式仕分け（Picking）</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>引当画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
-            <div class="matrix-row"><div>出荷準備画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>種まき式仕分け（Putting）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ピッキング式仕分け（Picking）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>引当画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>出荷準備画面</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 📤 エクスポート -->
@@ -203,9 +219,9 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">📤 エクスポート</div>
             </div>
-            <div class="matrix-row"><div>エクスポート画面を開く</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>Excel エクスポート</div><div>❌</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>リモートエクスポート（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>エクスポート画面を開く</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>Excel エクスポート</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>リモートエクスポート（SMB / NAS / SFTP / FTP）</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
           <!-- 🗺️ 動線テンプレート -->
@@ -213,7 +229,16 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🗺️ 動線テンプレート</div>
             </div>
-            <div class="matrix-row"><div>動線テンプレートの管理 / インポート（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div></div>
+            <div class="matrix-row"><div>動線テンプレートの管理 / インポート（custseq）</div><div>🔒 STD</div><div>🔒 STD</div><div>✅</div><div>✅</div></div>
+          </div>
+
+          <!-- 🏷️ ラベル印刷 -->
+          <div class="matrix-group">
+            <div class="matrix-group-hd">
+              <div class="matrix-group-hd-label">🏷️ ラベル印刷</div>
+            </div>
+            <div class="matrix-row"><div>ラベル設計 / 印刷</div><div>✅ ‡</div><div>✅ ‡</div><div>✅ ‡</div><div>✅</div></div>
+            <div class="matrix-row"><div>商用印刷（試用マークなし）／ Windows 印刷サービスと Bluetooth ラベルプリンター</div><div>❌</div><div>❌</div><div>❌</div><div>✅</div></div>
           </div>
 
           <!-- 🎙️ 音声 / ヘッドセット操作 -->
@@ -221,8 +246,11 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">🎙️ 音声 / ヘッドセット操作</div>
             </div>
-            <div class="matrix-row"><div>音声操作の設定入口</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>ヘッドセットのメディアボタン操作</div><div>✅ ★</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>音声操作の設定入口</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ヘッドセットのメディアボタン操作</div><div>✅ ★</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ヘッドセットボタン設定ウィザード</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>ハンズフリー音声操作（バックグラウンド聴取 / カスタム音声コマンド）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
+            <div class="matrix-row"><div>高度な音声操作（完了して次へ、前の項目、次の項目、リプレイ、再印刷）</div><div>🔒 PRO</div><div>🔒 PRO</div><div>🔒 PRO</div><div>✅</div></div>
           </div>
 
           <!-- ⚙️ 設定 -->
@@ -230,13 +258,14 @@
             <div class="matrix-group-hd">
               <div class="matrix-group-hd-label">⚙️ 設定</div>
             </div>
-            <div class="matrix-row"><div>一般設定</div><div>✅</div><div>✅</div><div>✅</div></div>
-            <div class="matrix-row"><div>バックアップの削除とデータベースの初期化</div><div>❌</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>一般設定</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>バックアップの削除とデータベースの初期化</div><div>❌</div><div>✅</div><div>✅</div><div>✅</div></div>
+            <div class="matrix-row"><div>AI アシスタント（説明センター）</div><div>✅</div><div>✅</div><div>✅</div><div>✅</div></div>
           </div>
 
         </div>
 
-        <p class="matrix-note">★ v1.4.0 で新たに公開（旧バージョン v1.3.6 では Std 限定）</p>
+        <p class="matrix-note">★ v1.4.0 で新たに公開（旧バージョン v1.3.6 では Std 限定）　‡ 試用透かし入り。商用印刷には Pro へのアップグレードが必要</p>
       </div>
 
       <!-- 重要な情報 -->

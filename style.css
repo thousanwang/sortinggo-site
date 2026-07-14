@@ -249,7 +249,7 @@ nav a:hover {
 
 .plan-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 20px;
 }
@@ -269,7 +269,13 @@ nav a:hover {
 }
 
 .plan-card--std {
-  border-color: #1a1a2e;
+  border-color: #1a56a4;
+  background: #1a56a4;
+  color: #fff;
+}
+
+.plan-card--pro {
+  border-color: #b8860b;
   background: #1a1a2e;
   color: #fff;
 }
@@ -283,7 +289,8 @@ nav a:hover {
   margin-bottom: 6px;
 }
 .plan-card--lite .plan-badge { color: #2563eb; }
-.plan-card--std .plan-badge  { color: #7b8fbf; }
+.plan-card--std .plan-badge  { color: #cfe0fa; }
+.plan-card--pro .plan-badge  { color: #d4af37; }
 
 .plan-price-row {
   display: flex;
@@ -300,12 +307,14 @@ nav a:hover {
 }
 .plan-card--lite .plan-amount { color: #2563eb; }
 .plan-card--std  .plan-amount { color: #fff; }
+.plan-card--pro  .plan-amount { color: #fff; }
 
 .plan-period {
   font-size: 0.82rem;
   color: #888;
 }
-.plan-card--std .plan-period { color: #a0aec0; }
+.plan-card--std .plan-period { color: #cdd9f2; }
+.plan-card--pro .plan-period { color: #a0aec0; }
 
 .plan-audience {
   font-size: 0.78rem;
@@ -316,8 +325,12 @@ nav a:hover {
   line-height: 1.5;
 }
 .plan-card--std .plan-audience {
+  color: #cdd9f2;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+.plan-card--pro .plan-audience {
   color: #a0aec0;
-  border-bottom-color: #2e3a5e;
+  border-bottom-color: #4a3a1e;
 }
 
 .plan-includes {
@@ -336,7 +349,8 @@ nav a:hover {
   color: #444;
   line-height: 1.4;
 }
-.plan-card--std .plan-includes li { color: #c0c8e0; }
+.plan-card--std .plan-includes li { color: #eaf1fc; }
+.plan-card--pro .plan-includes li { color: #c0c8e0; }
 
 .plan-includes li::before {
   content: "✅";
@@ -346,7 +360,8 @@ nav a:hover {
 }
 .plan-includes li.no::before  { content: "❌"; }
 .plan-includes li.no { color: #bbb; }
-.plan-card--std .plan-includes li.no { color: #4a5a7a; }
+.plan-card--std .plan-includes li.no { color: rgba(255, 255, 255, 0.5); }
+.plan-card--pro .plan-includes li.no { color: #4a5a7a; }
 
 .plan-note {
   font-size: 0.81rem;
@@ -390,12 +405,12 @@ nav a:hover {
 /* sticky column header */
 .matrix-col-hd {
   display: grid;
-  grid-template-columns: 1fr 84px 84px 96px;
+  grid-template-columns: 1fr 84px 84px 84px 96px;
   background: #1a1a2e;
   color: #fff;
   font-weight: 700;
   font-size: 0.83rem;
-  min-width: 420px;
+  min-width: 500px;
 }
 
 .matrix-col-hd > div {
@@ -406,18 +421,18 @@ nav a:hover {
 
 .matrix-col-hd > div:first-child { text-align: left; }
 
-.matrix-col-hd .col-std {
+.matrix-col-hd .col-pro {
   background: rgba(255,255,255,0.12);
 }
 
 /* Feature groups */
 .matrix-group {
-  min-width: 420px;
+  min-width: 500px;
 }
 
 .matrix-group-hd {
   display: grid;
-  grid-template-columns: 1fr 84px 84px 96px;
+  grid-template-columns: 1fr 84px 84px 84px 96px;
   background: #eef2ff;
   border-top: 2px solid #d0d9f5;
   padding: 0;
@@ -434,7 +449,7 @@ nav a:hover {
 
 .matrix-row {
   display: grid;
-  grid-template-columns: 1fr 84px 84px 96px;
+  grid-template-columns: 1fr 84px 84px 84px 96px;
   border-top: 1px solid #f2f2f2;
   align-items: center;
   transition: background 0.1s;
@@ -516,6 +531,12 @@ footer {
 }
 
 /* ── Responsive ───────────────────────────────── */
+
+@media (max-width: 900px) {
+  .plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.5rem; }
