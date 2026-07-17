@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>新增蓝牙标签机打印输出方式，可在文字指令与图像点阵间切换；图像点阵会先把整张标签渲染成图再发送，避免打印机没有内置中文字库时出现乱码或空白。</li>
+          <li>Print Service 直印设置同步改为两栏位：先选打印机指令语言（TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS），再选打印内容模式（文字指令/图像点阵）。</li>
+          <li>图像点阵模式新增多协议支持：TSPL BITMAP、ZPL ^GFA、EPL GW、ESC/POS GS v 0，并补齐 APP 与 Print Service 的 9 语系说明文案。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>“批次打印设置”界面精简为单一“完成”按钮，可一次保存备货、播种、拣选三种模式的打印设置，并修正滚动时按钮偶尔消失的问题。</li>

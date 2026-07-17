@@ -18,6 +18,14 @@
 
         <!-- ▼ 最新版本置頂，舊版本往下新增，格式照此範例複製 ▼ -->
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>新增藍牙標籤機列印輸出方式，可在文字指令與影像點陣間切換；影像點陣會先把整張標籤渲染成圖再送出，避免印表機沒有內建繁體中文字型時出現亂碼或空白。</li>
+          <li>Print Service 直印設定同步改為兩欄位：先選印表機指令語言（TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS），再選列印內容模式（文字指令/影像點陣）。</li>
+          <li>影像點陣模式新增多協定支援：TSPL BITMAP、ZPL ^GFA、EPL GW、ESC/POS GS v 0，並補齊 APP 與 Print Service 的 9 語系說明文案。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>「批次列印設定」畫面精簡為單一「完成」按鈕，可一次儲存備貨、播種、摘取三種模式的列印設定，並修正捲動時按鈕偶爾消失的問題。</li>

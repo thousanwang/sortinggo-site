@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Bluetoothラベルプリンター向けに印刷出力モードを追加しました。テキストコマンドと画像ラスターを選択できます。画像ラスターはラベル全体を先に描画してビットマップとして送信するため、内蔵CJKフォントがないプリンターでも文字化けや空白を避けやすくなります。</li>
+          <li>Print Serviceの直接印刷設定を2つの項目に分けました。先にプリンターのコマンドプロトコル（TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS）を選び、次に印刷内容モード（テキストコマンド/画像ラスター）を選びます。</li>
+          <li>画像ラスター出力はTSPL BITMAP、ZPL ^GFA、EPL GW、ESC/POS GS v 0に対応しました。APPとPrint Serviceのヘルプ文言も9言語すべてで更新しました。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>バッチ印刷設定ダイアログを単一の「完了」ボタンに簡素化し、準備・Putting・ピッキングの印刷設定を一度に保存できるようにしました。スクロール時にボタンが時々消える不具合も修正しました。</li>

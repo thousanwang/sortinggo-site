@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Se agregó un modo de salida para impresoras de etiquetas Bluetooth: Comando de texto o Imagen raster. Imagen raster renderiza primero toda la etiqueta y luego envía datos bitmap, evitando texto ilegible o en blanco cuando la impresora no tiene fuentes CJK integradas.</li>
+          <li>La configuración de impresión directa de Print Service ahora usa dos campos: protocolo de comando de la impresora (TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS) y modo de contenido de impresión (Comando de texto/Imagen raster).</li>
+          <li>El modo Imagen raster ahora admite varios protocolos: TSPL BITMAP, ZPL ^GFA, EPL GW y ESC/POS GS v 0. También se actualizó la ayuda de APP y Print Service en los 9 idiomas admitidos.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Se simplificó el cuadro de configuración de impresión del lote a un solo botón "Listo" que guarda a la vez la configuración de Preparación, Reparto y Recolección, y se corrigió que el botón desapareciera ocasionalmente al desplazarse.</li>

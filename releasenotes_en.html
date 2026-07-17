@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Added a print output mode for Bluetooth label printers, letting you choose Text command or Image raster. Image raster renders the whole label first, then sends bitmap data so printers without built-in CJK fonts can avoid garbled or blank text.</li>
+          <li>Updated Print Service direct printer settings to two fields: choose the printer command protocol first (TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS), then choose the print content mode (Text command/Image raster).</li>
+          <li>Expanded Image raster output across protocols with TSPL BITMAP, ZPL ^GFA, EPL GW, and ESC/POS GS v 0, and updated APP plus Print Service help text in all 9 supported languages.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Simplified the batch print settings dialog to a single "Done" button that saves Preparation, Putting, and Picking print settings all at once, and fixed the button occasionally disappearing while scrolling.</li>

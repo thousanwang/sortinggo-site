@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Menambahkan mode output cetak untuk printer label Bluetooth: Perintah teks atau Raster gambar. Raster gambar merender seluruh label terlebih dahulu lalu mengirim data bitmap, sehingga printer tanpa font CJK bawaan dapat menghindari teks berantakan atau kosong.</li>
+          <li>Pengaturan cetak langsung Print Service kini memakai dua kolom: pilih protokol perintah printer (TSPL2/TSPL/ZPL II/ZPL/EPL/ESC/POS), lalu pilih mode konten cetak (Perintah teks/Raster gambar).</li>
+          <li>Mode Raster gambar kini mendukung beberapa protokol: TSPL BITMAP, ZPL ^GFA, EPL GW, dan ESC/POS GS v 0. Bantuan APP dan Print Service juga diperbarui untuk 9 bahasa yang didukung.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.7 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Menyederhanakan dialog pengaturan cetak batch menjadi satu tombol "Selesai" yang menyimpan pengaturan cetak Persiapan, Putting, dan Pengambilan sekaligus, serta memperbaiki tombol yang sesekali menghilang saat menggulir.</li>
