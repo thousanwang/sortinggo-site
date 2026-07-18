@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Added Print Method Settings under System Settings &gt; Print Settings, so multiple server-printer or Bluetooth-printer methods can be created, named, tested, and saved.</li>
+          <li>Preparation, Putting, Putting subtotal, Picking, and Picking subtotal labels can now each choose which print method to use, making it easier to route different label types to different printers from the same phone.</li>
+          <li>Test print now first uses the Print Service label template named "SortingGo 測試列印"; if it is not found, the app falls back to its built-in test label. Reprint pages also exclude test print jobs.</li>
+          <li>Renamed the CP1252 text encoding option to "CP1252（English / Español / Indonesia / Latin）" in both the APP and Print Service Web UI.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.8 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Added a print output mode for Bluetooth label printers, letting you choose Text command or Image raster. Image raster renders the whole label first, then sends bitmap data so printers without built-in CJK fonts can avoid garbled or blank text.</li>
