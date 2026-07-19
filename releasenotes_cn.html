@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>改进蓝牙标签机“文字指令”模式的多语言打印。简体中文 TSPL/TSPL2 现在会使用对应的 GBK 代码页与简体中文字体，ZPL/ZPL II、EPL、ESC/POS 也会在安全支持的情况下写入代码页选择指令。</li>
+          <li>当 Print Service 拒绝测试打印或编译请求时，SortingGo 现在会显示 HTTP 400 响应内容，方便直接看到真正原因，而不只是一个错误码。</li>
+          <li>SortingGo Print Service v1.1.1 在全新数据库初始化时，会根据安装程序语言建立 4 个内置标签格式模板名称；简体中文 Windows 不会再默认成繁体中文模板名称。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>在系统设置 &gt; 打印设置新增“打印方式设置”，可建立、命名、测试并保存多个打印方式，支持服务器打印机与蓝牙打印机。</li>

@@ -18,6 +18,14 @@
 
         <!-- ▼ 最新版本置頂，舊版本往下新增，格式照此範例複製 ▼ -->
 
+        <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>改善藍牙標籤機「文字指令」模式的多語系列印。簡體中文 TSPL/TSPL2 會改用對應的 GBK 碼頁與簡中字型，ZPL/ZPL II、EPL、ESC/POS 也會在安全支援的情況下注入碼頁選擇指令。</li>
+          <li>當 Print Service 拒絕測試列印或編譯請求時，SortingGo 會顯示 HTTP 400 回應內容，方便直接看到真正原因，而不只是一個錯誤碼。</li>
+          <li>SortingGo Print Service v1.1.1 在全新資料庫初始化時，會依安裝程式語言建立 4 個內建標籤格式範本名稱；簡體中文 Windows 不會再預設成繁體中文範本名稱。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>在系統設定 &gt; 列印設定新增「列印方式設定」，可建立、命名、測試並儲存多個列印方式，支援伺服器印表機與藍牙印表機。</li>

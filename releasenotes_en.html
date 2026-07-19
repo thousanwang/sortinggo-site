@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Improved multilingual text-command printing for Bluetooth label printers. Simplified Chinese TSPL/TSPL2 output now uses the matching GBK code page and simplified Chinese font, and safe code-page commands are injected for supported ZPL/ZPL II, EPL, and ESC/POS cases.</li>
+          <li>When Print Service rejects a test print or compile request, SortingGo now shows the HTTP 400 response body so the real cause is visible instead of only a generic error code.</li>
+          <li>SortingGo Print Service v1.1.1 now initializes the four built-in label template names in the installer language for new databases, so Simplified Chinese Windows no longer starts with Traditional Chinese template names.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Added Print Method Settings under System Settings &gt; Print Settings, so multiple server-printer or Bluetooth-printer methods can be created, named, tested, and saved.</li>

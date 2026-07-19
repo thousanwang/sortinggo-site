@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Meningkatkan pencetakan multibahasa dalam mode perintah teks untuk printer label Bluetooth. Output TSPL/TSPL2 bahasa Tionghoa sederhana kini memakai code page GBK dan font Tionghoa sederhana yang sesuai, dan perintah pemilihan code page juga disisipkan untuk ZPL/ZPL II, EPL, dan ESC/POS jika aman didukung.</li>
+          <li>Saat Print Service menolak permintaan uji cetak atau kompilasi, SortingGo kini menampilkan isi respons HTTP 400 sehingga penyebab sebenarnya terlihat, bukan hanya kode error umum.</li>
+          <li>SortingGo Print Service v1.1.1 kini menginisialisasi 4 nama template label bawaan sesuai bahasa installer untuk database baru, sehingga Windows berbahasa Tionghoa sederhana tidak lagi dimulai dengan nama template Tionghoa tradisional.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Menambahkan Pengaturan metode cetak di Pengaturan sistem &gt; Pengaturan cetak, sehingga beberapa metode printer server atau printer Bluetooth dapat dibuat, diberi nama, diuji, dan disimpan.</li>

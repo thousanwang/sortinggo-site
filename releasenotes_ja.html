@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Bluetooth ラベルプリンターのテキストコマンド印刷で多言語対応を改善しました。簡体字中国語の TSPL/TSPL2 出力では GBK コードページと簡体字中国語フォントを使用し、ZPL/ZPL II、EPL、ESC/POS でも安全に対応できる場合はコードページ選択コマンドを挿入します。</li>
+          <li>Print Service がテスト印刷またはコンパイル要求を拒否した場合、SortingGo は HTTP 400 の応答本文を表示し、汎用的なエラーコードだけでなく実際の原因を確認できるようになりました。</li>
+          <li>SortingGo Print Service v1.1.1 では、新規データベース初期化時に 4 つの内蔵ラベルテンプレート名をインストーラーの言語で作成します。簡体字中国語 Windows でも繁体字中国語名で初期化されなくなります。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.7.9 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>システム設定 &gt; 印刷設定に「印刷方法設定」を追加し、サーバープリンターまたはBluetoothプリンターの印刷方法を複数作成、命名、テスト、保存できるようにしました。</li>
