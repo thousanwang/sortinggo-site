@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Se agrego escaneo integrado con camara para QR de emparejamiento en Configuracion de impresion, usando CameraX y ML Kit, sin requerir una app externa de escaneo.</li>
+          <li>SortingGo Print Server ahora puede mostrar un QR con nombre del servidor, URL LAN, token de emparejamiento y hora de vencimiento; la gestion de API Key en Web tambien muestra un QR de emparejamiento movil al crear una nueva key.</li>
+          <li>Despues de escanear, el telefono analiza el contenido de emparejamiento, prueba la conexion y guarda el servidor de impresion confiable junto con la API key/token.</li>
+          <li>La ventana de Windows Print Server ahora muestra el logo de SortingGo, usa iconos actualizados para la app y la barra de tareas, permite cambiar entre 9 idiomas y mantiene visible el boton Guardar configuracion en ventanas pequenas.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Mejoras en la impresión multilingüe con comandos de texto para impresoras de etiquetas Bluetooth. La salida TSPL/TSPL2 en chino simplificado ahora usa la página de códigos GBK y la fuente de chino simplificado correspondiente; ZPL/ZPL II, EPL y ESC/POS también insertan comandos de página de códigos cuando el protocolo lo permite de forma segura.</li>

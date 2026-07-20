@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>인쇄 설정에 CameraX와 ML Kit 기반의 내장 카메라 페어링 QR Code 스캔을 추가했습니다. 별도의 외부 스캐너 앱이 필요 없습니다.</li>
+          <li>SortingGo Print Server에서 서버 이름, LAN URL, 페어링 토큰, 만료 시간을 담은 QR Code를 표시할 수 있습니다. Web API Key 관리에서도 새 Key 생성 시 모바일 페어링 QR을 표시합니다.</li>
+          <li>스캔 후 휴대폰은 페어링 payload를 해석하고 연결을 테스트한 뒤 신뢰한 인쇄 서버와 API key/token을 저장합니다.</li>
+          <li>Windows Print Server 메인 화면에 SortingGo 로고를 추가하고 앱/작업 표시줄 아이콘을 갱신했습니다. 설정 화면은 9개 UI 언어 전환을 지원하며, 작은 창에서도 Save Settings 버튼이 보이도록 수정했습니다.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Bluetooth 라벨 프린터의 텍스트 명령 인쇄에서 다국어 처리를 개선했습니다. 간체 중국어 TSPL/TSPL2 출력은 이제 GBK 코드페이지와 간체 중국어 글꼴을 사용하며, ZPL/ZPL II, EPL, ESC/POS도 안전하게 지원되는 경우 코드페이지 선택 명령을 삽입합니다.</li>

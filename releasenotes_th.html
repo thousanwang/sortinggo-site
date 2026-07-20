@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>เพิ่มการสแกน QR Code สำหรับจับคู่ด้วยกล้องในตัวที่หน้าการตั้งค่าการพิมพ์ โดยใช้ CameraX และ ML Kit ไม่ต้องติดตั้งแอปสแกนภายนอก</li>
+          <li>SortingGo Print Server สามารถแสดง QR Code ที่มีชื่อเซิร์ฟเวอร์, LAN URL, pairing token และเวลาหมดอายุได้แล้ว และหน้า Web API Key Management จะแสดง QR สำหรับจับคู่มือถือเมื่อสร้าง key ใหม่</li>
+          <li>หลังสแกน โทรศัพท์จะอ่าน payload การจับคู่ ทดสอบการเชื่อมต่อ และบันทึก print server ที่เชื่อถือพร้อม API key/token</li>
+          <li>หน้าต่าง Windows Print Server เพิ่มโลโก้ SortingGo อัปเดตไอคอนแอปและ taskbar รองรับการสลับภาษา UI 9 ภาษา และแก้ให้ปุ่ม Save Settings ยังมองเห็นได้ในหน้าต่างขนาดเล็ก</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>ปรับปรุงการพิมพ์หลายภาษาด้วยโหมดคำสั่งข้อความสำหรับเครื่องพิมพ์ฉลาก Bluetooth โดย TSPL/TSPL2 ภาษาจีนตัวย่อจะใช้รหัสอักขระ GBK และฟอนต์จีนตัวย่อที่เหมาะสม และจะเพิ่มคำสั่งเลือก code page สำหรับ ZPL/ZPL II, EPL และ ESC/POS ในกรณีที่รองรับอย่างปลอดภัย</li>

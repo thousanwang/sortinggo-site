@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Menambahkan pemindaian QR pairing dengan kamera bawaan di Pengaturan cetak, memakai CameraX dan ML Kit, sehingga tidak perlu memasang app pemindai eksternal.</li>
+          <li>SortingGo Print Server kini dapat menampilkan QR berisi nama server, URL LAN, token pairing, dan waktu kedaluwarsa; Manajemen API Key di Web juga menampilkan QR pairing mobile saat key baru dibuat.</li>
+          <li>Setelah dipindai, ponsel akan membaca payload pairing, menguji koneksi, lalu menyimpan print server tepercaya beserta API key/token.</li>
+          <li>Jendela Windows Print Server kini menampilkan logo SortingGo, memakai ikon app/taskbar baru, mendukung pilihan 9 bahasa UI, dan tombol Save Settings tetap terlihat pada jendela yang lebih kecil.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Meningkatkan pencetakan multibahasa dalam mode perintah teks untuk printer label Bluetooth. Output TSPL/TSPL2 bahasa Tionghoa sederhana kini memakai code page GBK dan font Tionghoa sederhana yang sesuai, dan perintah pemilihan code page juga disisipkan untuk ZPL/ZPL II, EPL, dan ESC/POS jika aman didukung.</li>

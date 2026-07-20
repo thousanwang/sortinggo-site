@@ -16,6 +16,15 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>打印设置新增内置相机扫描配对 QR Code，使用 CameraX 与 ML Kit，不需要另外安装外部扫码 App。</li>
+          <li>SortingGo Print Server 可显示包含服务器名称、LAN 地址、配对令牌与到期时间的 QR Code；Web 的 API Key 管理在新建 Key 时也会显示手机可扫码的配对 QR。</li>
+          <li>手机扫码后会自动解析配对内容、测试连接，并保存受信任的打印服务器与 API key/token。</li>
+          <li>Windows Print Server 主界面加入 SortingGo Logo，主程序与任务栏图标更新，设置页支持 9 种语言切换并修正小窗口中看不到保存按钮的问题。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.0 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>改进蓝牙标签机“文字指令”模式的多语言打印。简体中文 TSPL/TSPL2 现在会使用对应的 GBK 代码页与简体中文字体，ZPL/ZPL II、EPL、ESC/POS 也会在安全支持的情况下写入代码页选择指令。</li>
