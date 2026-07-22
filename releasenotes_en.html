@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.2 <span class="release-date">2026-07</span></h2>
+        <ul>
+          <li>Upgraded the app to target Android 16 (API 36) and updated the Android Gradle Plugin, Kotlin, and AndroidX dependencies (Compose, Room, Navigation, CameraX, and more) to keep meeting Google Play's target API requirements.</li>
+          <li>Added explicit support for Android 16's predictive back gesture animations, making back navigation and screen transitions smoother.</li>
+          <li>Migrated the encrypted storage used for Azure/Google TTS keys and remote file source passwords to the latest AndroidX Security library, and fixed a number of compatibility warnings surfaced by the underlying library updates for better long-term stability.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.1 <span class="release-date">2026-07</span></h2>
         <ul>
           <li>Added built-in camera scanning for pairing QR codes in Print Settings, powered by CameraX and ML Kit, so no external scanner app is required.</li>
