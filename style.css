@@ -530,6 +530,81 @@ footer {
   background: #e0e8ff;
 }
 
+/* Google Play download (index only) */
+.download-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.download-info {
+  flex: 1 1 300px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 11px 24px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #1a56a4;
+}
+
+.download-url {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  color: #888;
+  word-break: break-all;
+}
+
+.download-qr {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.download-qr img {
+  display: block;
+  width: 156px;
+  height: 156px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #e0e4ee;
+  border-radius: 10px;
+}
+
+.download-qr span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: #666;
+}
+
+/* Secondary call to action (YouTube channel) */
+.video-btn {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 9px 22px;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.video-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
 /* ── Responsive ───────────────────────────────── */
 
 @media (max-width: 900px) {
@@ -556,5 +631,14 @@ footer {
 
   .plan-grid {
     grid-template-columns: 1fr;
+  }
+
+  .download-row {
+    gap: 22px;
+    justify-content: center;
+  }
+
+  .download-info {
+    text-align: center;
   }
 }
