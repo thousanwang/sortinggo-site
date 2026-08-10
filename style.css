@@ -43,6 +43,25 @@ header {
   text-decoration: none;
 }
 
+.site-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge-backup {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 4px;
+  padding: 2px 8px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
 nav {
   display: flex;
   gap: 20px;
@@ -57,6 +76,11 @@ nav a {
 }
 
 nav a:hover {
+  color: #2563eb;
+}
+
+nav a.nav-primary-link {
+  font-weight: 700;
   color: #2563eb;
 }
 
