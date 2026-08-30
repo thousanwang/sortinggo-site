@@ -16,6 +16,16 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.7 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>Suara kini membaca angka pada nama pelanggan dan lokasi penyimpanan satu per satu. Pelanggan bernama "Order 1001" dibaca "Order 1 0 0 1", bukan "seribu satu". Berlaku untuk semua bahasa antarmuka.</li>
+          <li>Nama produk dan spesifikasi membedakan kode dari jumlah: kode seperti "SKU-001" dan "PROD123" dieja per angka, sedangkan jumlah seperti "500ml" atau "24 per dus" tetap dibaca wajar seperti sebelumnya.</li>
+          <li>Memperbaiki hilangnya angka nol di depan saat impor Excel. Lokasi penyimpanan "0101" atau kode pelanggan "0001" tidak lagi dianggap angka dan dipendekkan menjadi "101" atau "1". Angka yang sangat panjang, misalnya nomor pesanan yang tersimpan dalam notasi ilmiah, juga tidak lagi terpotong menjadi nilai yang salah.</li>
+          <li>Format standar dan format kustom kini memperlakukan angka dengan cara yang sama, sehingga berkas yang sama memberi hasil yang sama lewat jalur impor mana pun.</li>
+          <li>Berkas data contoh kini memuat beberapa nama pelanggan dan produk yang mengandung angka (Order 1001, SKU-001, PROD123), sehingga Anda bisa langsung mengimpornya dan mendengar perbedaannya.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.6 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>Pesanan kini punya kolom opsional "Lokasi penyimpanan": tambahkan kolom storage_location pada berkas impor (tepat sebelum nama produk), atau isi langsung di layar tambah pesanan manual. Tersedia di semua paket, termasuk paket gratis.</li>

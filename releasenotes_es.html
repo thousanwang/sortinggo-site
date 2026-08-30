@@ -16,6 +16,16 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.7 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>La voz ahora lee dígito a dígito los números que aparecen en el nombre del cliente y en la ubicación. Un cliente llamado «Order 1001» se lee como «Order 1 0 0 1» en lugar de «mil uno». Se aplica a todos los idiomas de la interfaz.</li>
+          <li>Los nombres de producto y las especificaciones distinguen códigos de cantidades: códigos como «SKU-001» o «PROD123» se leen dígito a dígito, mientras que cantidades como «500ml» o «24 por caja» conservan su lectura natural.</li>
+          <li>Corregido el borrado de los ceros iniciales al importar desde Excel. Una ubicación «0101» o un código de cliente «0001» ya no se tratan como número ni se acortan a «101» o «1». Los números muy largos, como los números de pedido guardados en notación científica, tampoco se truncan a un valor incorrecto.</li>
+          <li>El formato estándar y los formatos personalizados tratan ahora los números de la misma manera, así que el mismo archivo da el mismo resultado se importe por donde se importe.</li>
+          <li>Los archivos de demostración incluyen varios clientes y productos con números en el nombre (Order 1001, SKU-001, PROD123) para que puedas importarlos y oír la diferencia al momento.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.6 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>Los pedidos admiten una "ubicación de almacén" opcional: añade la columna storage_location al archivo de importación (justo antes del nombre del producto) o escríbela directamente en la pantalla de alta manual. Disponible en todos los planes, incluido el gratuito.</li>

@@ -16,6 +16,16 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.7 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>Giọng đọc nay đọc từng chữ số trong tên khách hàng và vị trí lưu trữ. Khách hàng tên «Order 1001» được đọc là «Order 1 0 0 1» thay vì «một nghìn không trăm linh một». Áp dụng cho mọi ngôn ngữ giao diện.</li>
+          <li>Tên sản phẩm và quy cách tự phân biệt mã số với số lượng: các mã như «SKU-001», «PROD123» được đọc từng chữ số, còn số lượng như «500ml» hay «24 chai mỗi thùng» vẫn đọc tự nhiên như trước.</li>
+          <li>Sửa lỗi mất số 0 ở đầu khi nhập từ Excel. Vị trí lưu trữ «0101» hay mã khách hàng «0001» không còn bị coi là số và rút gọn thành «101», «1». Những số rất dài, ví dụ số đơn hàng lưu ở dạng ký hiệu khoa học, cũng không còn bị cắt thành giá trị sai.</li>
+          <li>Định dạng chuẩn và định dạng tùy chỉnh nay xử lý số giống hệt nhau, nên cùng một tệp sẽ cho kết quả như nhau dù nhập bằng cách nào.</li>
+          <li>Tệp dữ liệu mẫu có thêm vài khách hàng và sản phẩm có số trong tên (Order 1001, SKU-001, PROD123) để bạn nhập vào và nghe ngay được sự khác biệt.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.6 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>Đơn hàng có thêm trường tùy chọn "Vị trí lưu kho": thêm cột storage_location vào tệp nhập (nằm ngay trước tên sản phẩm), hoặc nhập trực tiếp trong màn hình thêm đơn thủ công. Dùng được trên mọi gói, kể cả gói miễn phí.</li>

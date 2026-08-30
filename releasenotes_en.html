@@ -16,6 +16,16 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.8.7 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>Voice prompts now read digits in customer names and storage locations one by one. A customer called "Order 1001" is read as "Order 1 0 0 1" instead of "one thousand one". This applies to every interface language.</li>
+          <li>Product names and specs tell codes and quantities apart: codes such as "SKU-001" and "PROD123" are spelled out digit by digit, while quantities such as "500ml" or "24 per case" keep their natural reading.</li>
+          <li>Fixed leading zeros being lost on Excel import. A storage location of "0101" or a customer code of "0001" is no longer treated as a number and shortened to "101" or "1". Very long numbers, such as order numbers stored in scientific notation, are no longer truncated to a wrong value either.</li>
+          <li>Standard and custom import formats now handle numbers identically, so the same file gives the same result whichever route you import it through.</li>
+          <li>The demo files include a few customers and products with numbers in their names (Order 1001, SKU-001, PROD123), so you can import them and hear the difference straight away.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.6 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>Orders can now carry an optional storage location. Add a storage_location column to your import file (it sits just before the product name), or type it straight into the manual order form. Available on every plan, including Free.</li>
