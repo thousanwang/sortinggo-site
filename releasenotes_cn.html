@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.9.0 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>修正使用「帮我设置耳机按键」完成设置后，耳机播放键对应的功能（例如「重播语音」）按下去没有反应的问题。影响选择 Samsung Galaxy Buds、Apple AirPods、Beats Flex 等机型并套用建议设置的用户。升级后会自动修正既有设置，不需要重新设置一次。</li>
+          <li>耳机播放键按一下即时反应：未指定双击以上手势时，松开按键当下就执行，不再有短暂延迟。</li>
+          <li>已知限制：在部分较旧的 Android 设备上（实测于 Android 10），耳机播放键可能会隔次没有反应——系统没有把那一次按键传给 App。这是设备本身蓝牙与媒体按键处理的行为，App 收到的每一次都会正确执行；遇到时再按一次即可。</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.9 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>打开速度提升：冷启动时间缩短约 20~25%（实机实测），从桌面点开后更快进入首页。</li>

@@ -16,6 +16,14 @@
     <div class="container">
       <div class="card">
 
+        <h2>v1.9.0 <span class="release-date">2026-08</span></h2>
+        <ul>
+          <li>Fixed the headset play button doing nothing for the command assigned to it (for example "Replay voice") after using the headset key setup wizard. This affected anyone who picked Samsung Galaxy Buds, Apple AirPods or Beats Flex and accepted the suggested setup. Existing settings are corrected automatically on upgrade, so there is no need to run the wizard again.</li>
+          <li>The headset play button now responds instantly to a single press when no double-press or longer gesture is assigned, instead of pausing briefly first.</li>
+          <li>Known limitation: on some older Android devices (observed on Android 10), every other press of the headset play button may do nothing, because the system does not pass that press to the app. This is how those devices handle Bluetooth media keys; every press the app does receive is carried out correctly. Press again if it happens.</li>
+        </ul>
+
+        <hr class="release-divider">
         <h2>v1.8.9 <span class="release-date">2026-08</span></h2>
         <ul>
           <li>Faster startup: cold start is about 20-25% quicker on real devices, so the home screen appears sooner after you tap the icon.</li>
