@@ -69,6 +69,19 @@ Google Play, increase `latestVersionCode` so older installed apps show the updat
 
 If this file is missing, unavailable, or invalid JSON, the app skips the update reminder and continues launching.
 
+The iOS app reads its own fields from the same file (Android ignores them):
+
+| Field | Meaning |
+|-------|---------|
+| `iosLatestVersion` | Latest iOS version on the App Store (e.g. `1.9.5`); a newer value than the installed one shows the update reminder |
+| `iosMinimumVersion` | Installed versions below this must update (the reminder cannot be postponed) |
+| `iosReleaseNotesUrl` | iOS release notes (`iosreleasenotes.html`) |
+| `appStoreUrl` | App Store page (https). Leave empty until the App Store listing exists: no reminder is shown |
+
+iOS and Android version numbers and changes can differ, so iOS has its own release notes:
+`iosreleasenotes.html` (redirector) and `iosreleasenotes_{lang}.html` in the 9 languages. The app opens the page
+for its own language directly.
+
 ## Play Store Links
 
 Use the following URLs for Google Play Console:
