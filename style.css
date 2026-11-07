@@ -554,7 +554,7 @@ footer {
   background: #e0e8ff;
 }
 
-/* Google Play download (index only) */
+/* App Store and Google Play downloads (index only) */
 .download-row {
   display: flex;
   align-items: center;
@@ -582,13 +582,32 @@ footer {
   background: #1a56a4;
 }
 
-/* App Store placeholder while the iOS app is in review — not a link. */
-.download-btn-soon,
-.download-btn-soon:hover {
-  margin-left: 8px;
-  background: #e5e7eb;
-  color: #6b7280;
-  cursor: default;
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.app-store-badge-link,
+.google-play-badge-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.app-store-badge-link img,
+.google-play-badge-link img {
+  display: block;
+  width: 188px;
+  height: 56px;
+}
+
+.app-store-badge-link:focus-visible,
+.google-play-badge-link:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+  border-radius: 8px;
 }
 
 .download-url {
